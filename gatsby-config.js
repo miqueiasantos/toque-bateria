@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: '/toque-bateria',
   siteMetadata: {
     title: `Toque Bateria`,
     description: `Conheça o maior curso online de bateria do Brasil`,
