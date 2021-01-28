@@ -10,7 +10,7 @@ export const Container = styled(Link)`
   color: ${props =>
     props.color === 'primary' ? COLORS.white : COLORS.textAccent};
   background-color: ${props =>
-    props.color === 'primary' ? COLORS.primaryAccent : COLORS.secondaryAccent};
+    props.color === 'primary' ? COLORS.secondaryAccent : COLORS.secondary};
   align-items: center;
   display: inline-flex;
   font-weight: 700;

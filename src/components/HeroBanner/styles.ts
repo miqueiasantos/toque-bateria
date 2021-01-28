@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { COLORS, SIZES } from '~/styles/variables'
+import { COLORS } from '~/styles/variables'
 import { CenterContainer as Center, Column } from '~/styles/Grid'
 
 import heroBackground from '~/images/hero-banner.png'
@@ -20,7 +20,7 @@ export const Title = styled.h1`
 
 export const TitleHightlight = styled.span`
   margin-bottom: 50px;
-  color: ${COLORS.secondaryAccent};
+  color: ${COLORS.secondary};
 `
 
 export const ShortDescription = styled.h2`
