@@ -1,4 +1,4 @@
 ---
-videoSrcURL: 'http://www.youtube.com/embed/q_8u3c4V6sE?modestbranding=1&showinfo=0&rel=0&controls=0&loop=1'
+videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE'
 videoTitle: 'Gatsby is Never Gonna Give You Up'
 ---

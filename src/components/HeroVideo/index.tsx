@@ -21,12 +21,15 @@ const HeroVideo: React.FC = () => {
     `
   )
 
-  console.log({ data })
+  const videoParams = '?modestbranding=1&showinfo=0&rel=0&controls=0&loop=1'
 
   return (
     <Container>
       <CenterContainer>
-        <Video videoSrcURL={data.videoSrcURL} videoTitle={data.videoTitle} />
+        <Video
+          videoSrcURL={`${data.videoSrcURL}${videoParams}`}
+          videoTitle={data.videoTitle}
+        />
       </CenterContainer>
     </Container>
   )
