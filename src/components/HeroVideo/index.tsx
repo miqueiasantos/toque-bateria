@@ -25,7 +25,7 @@ const HeroVideo: React.FC = () => {
 
   return (
     <Container>
-      <CenterContainer>
+      <CenterContainer paddingVertical>
         <Video
           videoSrcURL={`${data.videoSrcURL}${videoParams}`}
           videoTitle={data.videoTitle}

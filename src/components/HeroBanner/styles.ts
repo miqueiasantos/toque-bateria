@@ -38,7 +38,6 @@ export const FullDescription = styled.p`
 `
 
 export const CenterContainer = styled(Center)`
-  padding: ${SIZES.larger} 0;
   height: 600px;
   background-image: url(${heroBackground});
   background-position: bottom right;

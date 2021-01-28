@@ -37,7 +37,7 @@ const HeroBanner: React.FC = () => {
 
   return (
     <Container>
-      <CenterContainer>
+      <CenterContainer paddingVertical>
         <TextContainer>
           <Title>
             {firstTitleWord}{' '}

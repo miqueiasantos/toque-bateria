@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import { CONTAINER_WIDTH, SIZES } from './variables'
 
@@ -11,11 +11,22 @@ export enum FlexAligments {
   SpaceEvently = 'space-evently',
 }
 
-export const CenterContainer = styled.div`
+interface CenterContainerProps {
+  paddingVertical?: boolean
+}
+
+export const CenterContainer = styled.div<CenterContainerProps>`
   position: relative;
   max-width: ${CONTAINER_WIDTH};
   margin-left: auto;
   margin-right: auto;
+
+  ${props =>
+    props.paddingVertical &&
+    css`
+      padding-top: ${SIZES.larger};
+      padding-bottom: ${SIZES.larger};
+    `}
 `
 
 interface RowProps {
