@@ -16,10 +16,9 @@ import {
 const HeroBanner: React.FC = () => {
   const {
     markdownRemark: { frontmatter: data },
-    placeholderImage,
   } = useStaticQuery(
     graphql`
-      query IndexPageQuery {
+      query HeroBannerQuery {
         markdownRemark(fileAbsolutePath: { regex: "/hero-banner/" }) {
           frontmatter {
             title
@@ -35,8 +34,6 @@ const HeroBanner: React.FC = () => {
   const splitTitle = data.title.split(' ')
   const firstTitleWord = splitTitle.shift()
   const secondTitleWord = splitTitle.join(' ')
-
-  console.log({ placeholderImage })
 
   return (
     <Container>
