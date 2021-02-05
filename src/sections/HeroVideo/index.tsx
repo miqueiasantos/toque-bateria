@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-import Video from '../Video'
+import Video from '~/components/Video'
 import { CenterContainer, FlexContainer } from '~/components/Grid'
 
 const HeroVideo: React.FC = () => {

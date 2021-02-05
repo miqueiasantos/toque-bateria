@@ -4,9 +4,10 @@ import Layout from '~/components/Layout'
 import SEO from '~/components/SEO'
 
 import { CenterContainer } from '~/components/Grid'
-import HeroBanner from '~/components/HeroBanner'
-import HeroVideo from '~/components/HeroVideo'
-import SectionOne from '~/components/SectionOne'
+
+import HeroBanner from '~/sections/HeroBanner'
+import HeroVideo from '~/sections/HeroVideo'
+import SectionOne from '~/sections/SectionOne'
 
 const Home = () => (
   <Layout>

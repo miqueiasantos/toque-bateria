@@ -36,6 +36,7 @@ module.exports = {
           '~/pages': 'src/pages/',
           '~/styles': 'src/styles/',
           '~/images': 'src/images/',
+          '~/sections': 'src/sections/',
         },
       },
     },
