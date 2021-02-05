@@ -3,10 +3,10 @@ import React from 'react'
 import Layout from '~/components/Layout'
 import SEO from '~/components/SEO'
 
+import { CenterContainer } from '~/styles/Grid'
 import HeroBanner from '~/components/HeroBanner'
 import HeroVideo from '~/components/HeroVideo'
-import Card from '~/components/Card'
-import { CenterContainer, Row } from '~/styles/Grid'
+import SectionOne from '~/components/SectionOne'
 
 const Home = () => (
   <Layout>
@@ -15,13 +15,8 @@ const Home = () => (
     <HeroBanner />
     <HeroVideo />
 
-    <CenterContainer paddingVertical>
-      <Row>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-      </Row>
+    <CenterContainer>
+      <SectionOne />
     </CenterContainer>
   </Layout>
 )

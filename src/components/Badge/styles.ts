@@ -6,4 +6,8 @@ export const Container = styled.div`
   height: 60px;
   border-radius: 100%;
   background-color: ${COLORS.primaryAccent};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${COLORS.textAccent};
 `

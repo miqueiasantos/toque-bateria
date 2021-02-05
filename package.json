@@ -5,6 +5,9 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@styled-icons/ionicons-sharp": "^10.24.0",
+    "@styled-icons/ionicons-solid": "^10.24.0",
+    "@styled-icons/material": "^10.26.0",
     "gatsby": "^2.26.1",
     "gatsby-alias-imports": "^1.0.6",
     "gatsby-image": "^2.5.0",

@@ -3,17 +3,12 @@ import Badge from '../Badge'
 
 import { Container } from './styles'
 
-interface CardProps {
-  imageHeader?: boolean
+export interface CardProps {
+  withImage?: boolean
 }
 
-const Card: React.FC<CardProps> = ({ children }) => {
-  return (
-    <Container>
-      <Badge />
-      {children}
-    </Container>
-  )
+const Card: React.FC<CardProps> = ({ children, withImage }) => {
+  return <Container withImage={withImage}>{children}</Container>
 }
 
 export default Card
