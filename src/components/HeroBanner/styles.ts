@@ -1,16 +1,16 @@
 import styled from 'styled-components'
 
 import { COLORS } from '~/styles/variables'
-import { CenterContainer as Center, Column } from '~/styles/Grid'
+import { CenterContainer as Center, FlexContainer } from '~/components/Grid'
 
 import heroBackground from '~/images/hero-banner.png'
 
-export const Container = styled.div`
+export const Container = styled(FlexContainer)`
   background-color: ${COLORS.primary};
-  align-items: center;
+  height: 600px;
 `
 
-export const TextContainer = styled(Column)``
+export const TextContainer = styled.div``
 
 export const Title = styled.h1`
   margin-top: 0;
@@ -38,7 +38,6 @@ export const FullDescription = styled.p`
 `
 
 export const CenterContainer = styled(Center)`
-  height: 600px;
   background-image: url(${heroBackground});
   background-position: bottom right;
   background-repeat: no-repeat;

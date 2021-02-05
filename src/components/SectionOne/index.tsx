@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Row } from '~/styles/Grid'
+import { FlexContainer } from '~/components/Grid'
 
 import Badge from '~/components/Badge'
 import Card from '~/components/Card'
@@ -18,7 +18,7 @@ const SectionOne: React.FC = () => {
     <Container>
       <SectionTitle sectionTitle={content.sectionTitle} center />
 
-      <Row>
+      <FlexContainer>
         {content.cards.map(item => {
           return (
             <Card key={item.title.trim()}>
@@ -30,7 +30,7 @@ const SectionOne: React.FC = () => {
             </Card>
           )
         })}
-      </Row>
+      </FlexContainer>
     </Container>
   )
 }

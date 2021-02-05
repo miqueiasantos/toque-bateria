@@ -1,11 +1,12 @@
 import React from 'react'
+import { SIZES } from '~/styles/variables'
 
 import { Container, MenuList, MenuItem, MenuButton } from './styles'
 
 const Navbar: React.FC = () => {
   return (
-    <Container>
-      <MenuList>
+    <Container as="nav" flexGrow={1} justifyContent="flex-end">
+      <MenuList as="ul" gap={SIZES.large}>
         <MenuItem>
           <MenuButton to="/#home">Home</MenuButton>
         </MenuItem>

@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '~/components/Layout'
 import SEO from '~/components/SEO'
 
-import { CenterContainer } from '~/styles/Grid'
+import { CenterContainer } from '~/components/Grid'
 import HeroBanner from '~/components/HeroBanner'
 import HeroVideo from '~/components/HeroVideo'
 import SectionOne from '~/components/SectionOne'

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
-import { Row } from '~/styles/Grid'
+import { FlexContainer } from '~/components/Grid'
 
-export const Container = styled(Row)`
+export const Container = styled(FlexContainer)`
   height: 100px;
 `

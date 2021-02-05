@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 import Navbar from '~/components/Navbar'
 import Button from '~/components/Button'
 
-import { CenterContainer, FlexAligments } from '~/styles/Grid'
+import { CenterContainer, FlexContainer } from '~/components/Grid'
 
 import { Container } from './styles'
 
@@ -15,11 +15,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   return (
     <CenterContainer>
-      <Container
-        justifyContent={FlexAligments.SpaceBetween}
-        alignItems={FlexAligments.Center}
-      >
-        <Link to="/">Logo</Link>
+      <Container justifyContent="space-between" alignItems="center">
+        <Link to="/">{siteTitle}</Link>
 
         <Navbar />
         <Button>Matricule-se</Button>

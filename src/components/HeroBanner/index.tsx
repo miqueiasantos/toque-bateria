@@ -36,8 +36,8 @@ const HeroBanner: React.FC = () => {
   const secondTitleWord = splitTitle.join(' ')
 
   return (
-    <Container>
-      <CenterContainer paddingVertical>
+    <Container paddingTop="larger">
+      <CenterContainer>
         <TextContainer>
           <Title>
             {firstTitleWord}{' '}

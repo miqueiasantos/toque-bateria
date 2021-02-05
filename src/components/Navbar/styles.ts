@@ -1,15 +1,17 @@
 import { Link } from 'gatsby'
 import styled from 'styled-components'
+
+import { FlexContainer } from '~/components/Grid'
 import { COLORS, SIZES } from '~/styles/variables'
 
-export const Container = styled.nav``
+export const Container = styled(FlexContainer)`
+  margin-right: ${SIZES.large};
+`
 
-export const MenuList = styled.ul`
+export const MenuList = styled(FlexContainer)`
   margin: 0;
   padding: 0;
   list-style: none;
-  display: flex;
-  gap: ${SIZES.large};
 `
 
 export const MenuItem = styled.li``
