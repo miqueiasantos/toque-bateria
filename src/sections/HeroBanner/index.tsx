@@ -1,7 +1,8 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
 
 import Button from '~/components/Button'
+
+import content from './content'
 
 import {
   Container,
@@ -14,24 +15,7 @@ import {
 } from './styles'
 
 const HeroBanner: React.FC = () => {
-  const {
-    markdownRemark: { frontmatter: data },
-  } = useStaticQuery(
-    graphql`
-      query HeroBannerQuery {
-        markdownRemark(fileAbsolutePath: { regex: "/hero-banner/" }) {
-          frontmatter {
-            title
-            shortDescription
-            fullDescription
-            buttonText
-          }
-        }
-      }
-    `
-  )
-
-  const splitTitle = data.title.split(' ')
+  const splitTitle = content.title.split(' ')
   const firstTitleWord = splitTitle.shift()
   const secondTitleWord = splitTitle.join(' ')
 
@@ -43,10 +27,10 @@ const HeroBanner: React.FC = () => {
             {firstTitleWord}{' '}
             <TitleHightlight>{secondTitleWord}</TitleHightlight>
           </Title>
-          <ShortDescription>{data.shortDescription}</ShortDescription>
-          <FullDescription>{data.fullDescription}</FullDescription>
+          <ShortDescription>{content.shortContent}</ShortDescription>
+          <FullDescription>{content.fullContent}</FullDescription>
 
-          <Button color="secondary">{data.buttonText}</Button>
+          <Button color="secondary">{content.buttonText}</Button>
         </TextContainer>
       </CenterContainer>
     </Container>
