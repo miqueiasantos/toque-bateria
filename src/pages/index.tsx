@@ -9,6 +9,7 @@ import HeroBanner from '~/sections/HeroBanner'
 import HeroVideo from '~/sections/HeroVideo'
 import SectionOne from '~/sections/SectionOne'
 import SectionTwo from '~/sections/SectionTwo'
+import SectionThree from '~/sections/SectionThree'
 
 const Home = () => (
   <Layout>
@@ -20,6 +21,7 @@ const Home = () => (
     <CenterContainer>
       <SectionOne />
       <SectionTwo />
+      <SectionThree />
     </CenterContainer>
   </Layout>
 )
