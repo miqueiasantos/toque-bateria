@@ -31,7 +31,7 @@ interface FlexContainerProps {
   gap?: string
   paddingTop?: Margins
   paddingBottom?: Margins
-  horizontalPadding?: Margins
+  paddingHorizontal?: Margins
   paddingVertical?: Margins
   column?: ColumnSizes
 }
@@ -63,8 +63,8 @@ const FlexContainer = styled.div<FlexContainerProps>`
     `};
 
   ${props =>
-    props.paddingVertical &&
-    `padding-top: ${SIZES[props.paddingVertical]};padding-bottom: ${
+    props.paddingHorizontal &&
+    `padding-left: ${SIZES[props.paddingVertical]};padding-right: ${
       SIZES[props.paddingVertical]
     };
     `};

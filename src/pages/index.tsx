@@ -10,6 +10,7 @@ import HeroVideo from '~/sections/HeroVideo'
 import SectionOne from '~/sections/SectionOne'
 import SectionTwo from '~/sections/SectionTwo'
 import SectionThree from '~/sections/SectionThree'
+import SectionNumbers from '~/sections/SectionNumbers'
 
 const Home = () => (
   <Layout>
@@ -23,6 +24,8 @@ const Home = () => (
       <SectionTwo />
       <SectionThree />
     </CenterContainer>
+
+    <SectionNumbers />
   </Layout>
 )
 
