@@ -8,5 +8,5 @@ export const Container = styled(FlexContainer)`
 `
 
 export const LogoContainer = styled(Link)`
-  flex: 1;
+  flex-grow: 1;
 `

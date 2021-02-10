@@ -1,25 +1,23 @@
 import React from 'react'
-import Img from 'gatsby-image'
-import { useStaticQuery, graphql } from 'gatsby'
 
-const Logo: React.FC = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      placeholderImage: file(relativePath: { eq: "logo.png" }) {
-        childImageSharp {
-          fixed(height: 65) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-    }
-  `)
+import LogoHeader from '~/images/logo-header.png'
 
-  if (!data?.placeholderImage?.childImageSharp?.fixed) {
-    return <div>Logo not found</div>
+type LogoType = 'header' | 'footer'
+interface LogoProps {
+  type?: LogoType
+  siteName?: string
+}
+
+const Logo: React.FC<LogoProps> = ({ type = 'header', siteName }) => {
+  switch (type) {
+    case 'header':
+      return <img src={LogoHeader} alt={siteName} height="65px" />
+    case 'footer':
+      return <img src={LogoHeader} alt={siteName} />
+
+    default:
+      return <img src={LogoHeader} alt={siteName} />
   }
-
-  return <Img fixed={data.placeholderImage.childImageSharp.fixed} />
 }
 
 export default Logo
