@@ -41,16 +41,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts-v2`,
       options: {
-        fonts: ['dm sans'],
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `content`,
-        path: `${__dirname}/src/content`,
+        fonts: [
+          {
+            family: 'DM Sans',
+            variable: true,
+            weights: ['100..900'],
+          },
+        ],
       },
     },
     `gatsby-transformer-remark`,
