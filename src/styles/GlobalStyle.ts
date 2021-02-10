@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components'
+import { COLORS } from './variables'
 
 const GlobalStyle = createGlobalStyle`
   *,
@@ -16,6 +17,11 @@ const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
+  }
+
+  .highlight {
+    background-color: inherit;
+    color: ${COLORS.secondaryAccent}
   }
 `
 

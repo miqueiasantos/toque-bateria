@@ -1,4 +1,5 @@
 import React from 'react'
+import Highlight from 'react-highlighter'
 
 import { FlexContainer } from '~/components/Grid'
 
@@ -26,7 +27,11 @@ const SectionTwo: React.FC = () => {
       >
         <SectionTitle noMargins>{content.title}</SectionTitle>
         <ShortContent>{content.shortContent}</ShortContent>
-        <FullContent>{content.fullContent}</FullContent>
+        <FullContent>
+          <Highlight search={content.fullContentHighlight}>
+            {content.fullContent}
+          </Highlight>
+        </FullContent>
 
         <FlexContainer gap="20px">
           {content.cards.map((item, index) => (

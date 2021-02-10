@@ -1,6 +1,10 @@
 import { ContentBase } from '~/types'
 
-const content: ContentBase = {
+interface Content extends ContentBase {
+  fullContentHighlight: string
+}
+
+const content: Content = {
   video: {
     videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
     videoTitle: 'A virada mais famosa do mundo!',
@@ -9,6 +13,7 @@ const content: ContentBase = {
   shortContent: 'Aproveite melhor seu tempo de estudo:',
   fullContent:
     'Você terá acesso ao Estude Junto, onde poderá estudar todos os exercícios em 3 andamentos diferentes, em vídeos com alta qualidade de som e imagem.',
+  fullContentHighlight: 'Estude Junto',
   cards: [
     {
       icon: { name: 'SlowMotionVideo' },
