@@ -5,7 +5,7 @@ import { COLORS } from '~/styles/variables'
 import { SectionTitleProps } from '.'
 
 export const Container = styled.div<SectionTitleProps>`
-  margin-bottom: 45px;
+  margin-bottom: ${props => (props.noMargins ? '0' : '45px')};
 
   color: ${props =>
     props.theme === 'light' ? COLORS.textAccent : COLORS.white};

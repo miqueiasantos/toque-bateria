@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
     <Container as="nav" flexGrow={1} justifyContent="flex-end">
       <MenuList as="ul" gap={SIZES.large}>
         {content.map(item => (
-          <MenuItem>
+          <MenuItem key={item.link}>
             <MenuButton to={`/${item.link}`}>{item.text}</MenuButton>
           </MenuItem>
         ))}

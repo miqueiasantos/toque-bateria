@@ -6,13 +6,13 @@ import * as IoniconsSharp from '@styled-icons/ionicons-sharp'
 import { SIZES } from '~/styles/variables'
 
 interface IconProps {
-  icon: string
+  name: string
   size?: string
   title?: string
   iconPack?: string
 }
 
-const Icon: React.FC<IconProps> = ({ icon, size = SIZES.large, iconPack }) => {
+const Icon: React.FC<IconProps> = ({ name, size = SIZES.large, iconPack }) => {
   const getIconPack = () => {
     switch (iconPack) {
       case 'ionicons-solid':
@@ -24,7 +24,7 @@ const Icon: React.FC<IconProps> = ({ icon, size = SIZES.large, iconPack }) => {
     }
   }
 
-  const DefaultIcon = getIconPack()[icon]
+  const DefaultIcon = getIconPack()[name]
 
   return <DefaultIcon size={size} />
 }

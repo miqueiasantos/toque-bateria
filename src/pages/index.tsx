@@ -8,6 +8,7 @@ import { CenterContainer } from '~/components/Grid'
 import HeroBanner from '~/sections/HeroBanner'
 import HeroVideo from '~/sections/HeroVideo'
 import SectionOne from '~/sections/SectionOne'
+import SectionTwo from '~/sections/SectionTwo'
 
 const Home = () => (
   <Layout>
@@ -18,6 +19,7 @@ const Home = () => (
 
     <CenterContainer>
       <SectionOne />
+      <SectionTwo />
     </CenterContainer>
   </Layout>
 )

@@ -3,22 +3,23 @@ import React from 'react'
 import { Container, Title, Description } from './styles'
 
 export interface SectionTitleProps {
-  sectionTitle?: string
   description?: string
   center?: boolean
   theme?: 'light' | 'dark'
+  noMargins?: boolean
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({
-  sectionTitle,
+  children,
   description,
   center,
   theme = 'light',
+  noMargins,
 }) => {
   return (
-    <Container theme={theme} center={center}>
-      <Title>{sectionTitle}</Title>
-      <Description>{description}</Description>
+    <Container theme={theme} center={center} noMargins={noMargins}>
+      <Title>{children}</Title>
+      {description && <Description>{description}</Description>}
     </Container>
   )
 }

@@ -8,15 +8,15 @@ interface VideoProps {
 }
 
 const Video: React.FC<VideoProps> = ({ videoSrcURL, videoTitle }) => {
+  const videoParams = '?modestbranding=1&showinfo=0&rel=0&controls=0&loop=1'
+
   return (
     <Container>
       <VideoFrame
-        src={videoSrcURL}
+        src={`${videoSrcURL}${videoParams}`}
         title={videoTitle}
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         frameBorder="0"
-        // webkitallowfullscreen="true"
-        // mozallowfullscreen="true"
         allowFullScreen
       />
     </Container>

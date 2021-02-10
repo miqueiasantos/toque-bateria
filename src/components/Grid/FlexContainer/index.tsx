@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 import { SIZES } from '~/styles/variables'
 
@@ -19,6 +18,8 @@ type FlexAligments =
 
 type Margins = 'small' | 'normal' | 'large' | 'larger'
 
+type ColumnSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
+
 interface FlexContainerProps {
   flexDirection?: FlexDirection
   flexGrow?: number
@@ -32,6 +33,7 @@ interface FlexContainerProps {
   paddingBottom?: Margins
   horizontalPadding?: Margins
   paddingVertical?: Margins
+  column?: ColumnSizes
 }
 
 const FlexContainer = styled.div<FlexContainerProps>`
@@ -41,6 +43,8 @@ const FlexContainer = styled.div<FlexContainerProps>`
   flex-grow: ${props => props.flexGrow};
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
+
+  ${props => props.column && `width: ${100 / props.column}%;`}
 
   ${props => props.gap && `gap: ${props.gap};`}
   ${props => props.alignContent && `align-content: ${props.alignContent};`}

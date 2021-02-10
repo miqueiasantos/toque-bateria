@@ -1,22 +1,11 @@
-interface Icon {
-  name: string
-  pack: string
-}
+import { Card, ContentBase } from '~/types'
 
-interface Card {
-  icon: Icon
-  title: string
-  content: string
-}
-
-interface Content {
-  sectionTitle: string
-  sectionDescription?: string
+interface Content extends ContentBase {
   cards: Card[]
 }
 
 const content: Content = {
-  sectionTitle: 'Aprenda bateria com um conteúdo pensado para você',
+  title: 'Aprenda bateria com um conteúdo pensado para você',
   cards: [
     {
       title: 'Conteúdo Estruturado',

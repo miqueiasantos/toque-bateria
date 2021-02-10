@@ -1,11 +1,10 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
+  flex-grow: 1;
   position: relative;
-  height: 0;
   overflow: hidden;
-  max-width: 100%;
-  padding-bottom: 56.25%;
+  padding-top: 56.25%;
 `
 
 export const VideoFrame = styled.iframe`
@@ -14,4 +13,5 @@ export const VideoFrame = styled.iframe`
   left: 0;
   width: 100%;
   height: 100%;
+  border: 0;
 `

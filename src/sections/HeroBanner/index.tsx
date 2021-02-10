@@ -30,7 +30,7 @@ const HeroBanner: React.FC = () => {
           <ShortDescription>{content.shortContent}</ShortDescription>
           <FullDescription>{content.fullContent}</FullDescription>
 
-          <Button color="secondary">{content.buttonText}</Button>
+          <Button color="secondary">{content.callToAction}</Button>
         </TextContainer>
       </CenterContainer>
     </Container>

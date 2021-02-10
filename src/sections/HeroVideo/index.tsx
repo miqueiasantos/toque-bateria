@@ -6,13 +6,11 @@ import { CenterContainer, FlexContainer } from '~/components/Grid'
 import content from './content'
 
 const HeroVideo: React.FC = () => {
-  const videoParams = '?modestbranding=1&showinfo=0&rel=0&controls=0&loop=1'
-
   return (
     <FlexContainer paddingVertical="larger">
       <CenterContainer>
         <Video
-          videoSrcURL={`${content.videoSrcURL}${videoParams}`}
+          videoSrcURL={content.videoSrcURL}
           videoTitle={content.videoTitle}
         />
       </CenterContainer>

@@ -16,18 +16,22 @@ import { Container } from './styles'
 const SectionOne: React.FC = () => {
   return (
     <Container>
-      <SectionTitle sectionTitle={content.sectionTitle} center />
+      <SectionTitle center>{content.title}</SectionTitle>
 
-      <FlexContainer>
+      <FlexContainer gap="20px">
         {content.cards.map(item => {
           return (
-            <Card key={item.title.trim()}>
-              <Badge>
-                <Icon icon={item.icon.name} iconPack={item.icon.pack} />
-              </Badge>
-              <CardTitle>{item.title}</CardTitle>
-              <CardContent>{item.content}</CardContent>
-            </Card>
+            <FlexContainer column={4} key={item.title.trim()}>
+              <Card shadow>
+                <FlexContainer alignItems="center" flexDirection="column">
+                  <Badge>
+                    <Icon {...item.icon} />
+                  </Badge>
+                  <CardTitle>{item.title}</CardTitle>
+                  <CardContent>{item.content}</CardContent>
+                </FlexContainer>
+              </Card>
+            </FlexContainer>
           )
         })}
       </FlexContainer>

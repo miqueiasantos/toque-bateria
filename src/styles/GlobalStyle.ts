@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
+    line-height: 1.3;
     letter-spacing: 1px;
   }
 
