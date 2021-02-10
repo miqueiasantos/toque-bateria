@@ -8,6 +8,11 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
+  *::selection {
+    color: ${COLORS.textPrimary};
+    background-color: ${COLORS.secondary}
+  }
+
   body {
     font-family: 'DM Sans', sans-serif;
     font-size: 16px;
