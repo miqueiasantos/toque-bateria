@@ -3,10 +3,10 @@ import { Link } from 'gatsby'
 
 import Navbar from '~/components/Navbar'
 import Button from '~/components/Button'
+import { CenterContainer } from '~/components/Grid'
+import Logo from '~/components/Logo'
 
-import { CenterContainer, FlexContainer } from '~/components/Grid'
-
-import { Container } from './styles'
+import { Container, LogoContainer } from './styles'
 
 interface HeaderProps {
   siteTitle: string
@@ -16,7 +16,9 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
   return (
     <CenterContainer>
       <Container justifyContent="space-between" alignItems="center">
-        <Link to="/">{siteTitle}</Link>
+        <LogoContainer to="/">
+          <Logo />
+        </LogoContainer>
 
         <Navbar />
         <Button>Matricule-se</Button>
