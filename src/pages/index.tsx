@@ -12,6 +12,7 @@ import SectionTwo from '~/sections/SectionTwo'
 import SectionThree from '~/sections/SectionThree'
 import SectionNumbers from '~/sections/SectionNumbers'
 import SectionVideoSlider from '~/sections/SectionVideoSlider'
+import SectionModules from '~/sections/SectionModules'
 
 const Home = () => (
   <Layout>
@@ -31,6 +32,8 @@ const Home = () => (
     <CenterContainer marginVertical="larger">
       <SectionVideoSlider />
     </CenterContainer>
+
+    <SectionModules />
   </Layout>
 )
 

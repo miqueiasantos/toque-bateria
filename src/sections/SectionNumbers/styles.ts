@@ -34,7 +34,7 @@ export const BackgroundFilter = styled.div`
   right: 0;
   bottom: 0;
   z-index: 2;
-  background: linear-gradient(to left, #5b8888, #1d414e);
+  background: linear-gradient(to right, #5b8888, #1d414e);
   opacity: 0.7;
 `
 

@@ -7,6 +7,7 @@ interface CenterContainerProps {
   marginTop?: Margins
   marginBottom?: Margins
   marginVertical?: Margins
+  paddingVertical?: Margins
 }
 
 const CenterContainer = styled.div<CenterContainerProps>`
@@ -23,6 +24,12 @@ const CenterContainer = styled.div<CenterContainerProps>`
     props.marginVertical &&
     `margin-top: ${SIZES[props.marginVertical]};margin-bottom: ${
       SIZES[props.marginVertical]
+    };
+    `};
+  ${props =>
+    props.paddingVertical &&
+    `padding-top: ${SIZES[props.paddingVertical]};padding-bottom: ${
+      SIZES[props.paddingVertical]
     };
     `};
 `

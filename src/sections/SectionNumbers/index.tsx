@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
