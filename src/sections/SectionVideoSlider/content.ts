@@ -5,23 +5,23 @@ const content: ContentBase = {
   subtitle: 'Veja o que os alunos dizem sobre a Plataforma',
   videos: [
     {
-      videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+      videoSrcURL: 'https://player.vimeo.com/video/474235442',
       videoTitle: 'Sérgio Panstein',
     },
     {
-      videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+      videoSrcURL: 'https://player.vimeo.com/video/474235062',
       videoTitle: 'Raiane Romano',
     },
     {
-      videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+      videoSrcURL: 'https://player.vimeo.com/video/474234396',
       videoTitle: 'André Spina',
     },
     {
-      videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+      videoSrcURL: 'https://player.vimeo.com/video/474234519',
       videoTitle: 'Everson Junio',
     },
     {
-      videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+      videoSrcURL: 'https://player.vimeo.com/video/474234622',
       videoTitle: 'Juliano Davoli',
     },
   ],

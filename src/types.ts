@@ -38,7 +38,7 @@ export interface Card {
   content?: string
 }
 
-export interface Video {
+export interface VideoBase {
   videoSrcURL: string
   videoTitle: string
 }
@@ -49,8 +49,8 @@ export interface ContentBase {
   shortContent?: string
   fullContent?: string
   callToAction?: string
-  video?: Video
-  videos?: Video[]
+  video?: VideoBase
+  videos?: VideoBase[]
   cards?: Card[]
 }
 
