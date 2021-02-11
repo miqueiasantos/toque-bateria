@@ -1,14 +1,22 @@
 import styled, { css } from 'styled-components'
 
+import { SectionTitleBaseProps } from '~/types'
 import { COLORS } from '~/styles/variables'
 
-import { SectionTitleProps } from '.'
-
-export const Container = styled.div<SectionTitleProps>`
+export const Container = styled.div<SectionTitleBaseProps>`
   margin-bottom: ${props => (props.noMargins ? '0' : '45px')};
 
-  color: ${props =>
-    props.theme === 'light' ? COLORS.textAccent : COLORS.white};
+  color: ${props => {
+    if (props.theme === 'light' && props.subtitle) {
+      return COLORS.textPrimary
+    }
+
+    if (props.theme === 'light') {
+      return COLORS.textAccent
+    }
+
+    return COLORS.white
+  }};
 
   ${props =>
     props.center &&
@@ -23,6 +31,7 @@ export const Title = styled.h2`
   font-weight: 400;
 `
 
-export const Description = styled.p`
+export const Subtitle = styled.p`
   margin-bottom: 0;
+  font-size: 1.25em;
 `

@@ -1,13 +1,30 @@
 import styled from 'styled-components'
 
-import { CONTAINER_WIDTH } from '~/styles/variables'
+import { Margins } from '~/types'
+import { CONTAINER_WIDTH, SIZES } from '~/styles/variables'
 
-const CenterContainer = styled.div`
+interface CenterContainerProps {
+  marginTop?: Margins
+  marginBottom?: Margins
+  marginVertical?: Margins
+}
+
+const CenterContainer = styled.div<CenterContainerProps>`
   position: relative;
   width: 100%;
   max-width: ${CONTAINER_WIDTH};
   margin-left: auto;
   margin-right: auto;
+
+  ${props => props.marginTop && `margin-top: ${SIZES[props.marginTop]};`};
+  ${props =>
+    props.marginBottom && `margin-bottom: ${SIZES[props.marginBottom]};`};
+  ${props =>
+    props.marginVertical &&
+    `margin-top: ${SIZES[props.marginVertical]};margin-bottom: ${
+      SIZES[props.marginVertical]
+    };
+    `};
 `
 
 export default CenterContainer

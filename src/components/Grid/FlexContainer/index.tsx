@@ -1,24 +1,13 @@
 import styled from 'styled-components'
+
+import {
+  ColumnSizes,
+  FlexAligments,
+  FlexDirection,
+  FlexWrap,
+  Margins,
+} from '~/types'
 import { SIZES } from '~/styles/variables'
-
-type FlexDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse'
-
-type FlexWrap = 'nowrap' | 'wrap' | 'wrap-reverse'
-
-type FlexAligments =
-  | 'flex-start'
-  | 'flex-end'
-  | 'center'
-  | 'space-around'
-  | 'space-between'
-  | 'space-evently'
-  | 'stretch'
-  | 'self-start'
-  | 'self-end'
-
-type Margins = 'small' | 'normal' | 'large' | 'larger'
-
-type ColumnSizes = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 
 interface FlexContainerProps {
   flexDirection?: FlexDirection
@@ -64,8 +53,8 @@ const FlexContainer = styled.div<FlexContainerProps>`
 
   ${props =>
     props.paddingHorizontal &&
-    `padding-left: ${SIZES[props.paddingVertical]};padding-right: ${
-      SIZES[props.paddingVertical]
+    `padding-left: ${SIZES[props.paddingHorizontal]};padding-right: ${
+      SIZES[props.paddingHorizontal]
     };
     `};
 `

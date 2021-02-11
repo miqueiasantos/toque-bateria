@@ -1,25 +1,26 @@
 import React from 'react'
 
-import { Container, Title, Description } from './styles'
+import { SectionTitleBaseProps } from '~/types'
 
-export interface SectionTitleProps {
-  description?: string
-  center?: boolean
-  theme?: 'light' | 'dark'
-  noMargins?: boolean
-}
+import { Container, Title, Subtitle } from './styles'
 
-const SectionTitle: React.FC<SectionTitleProps> = ({
+const SectionTitle: React.FC<SectionTitleBaseProps> = ({
   children,
-  description,
   center,
   theme = 'light',
   noMargins,
+  subtitle,
 }) => {
+  const TitleTypeComponent = subtitle ? Subtitle : Title
+
   return (
-    <Container theme={theme} center={center} noMargins={noMargins}>
-      <Title>{children}</Title>
-      {description && <Description>{description}</Description>}
+    <Container
+      theme={theme}
+      center={center}
+      noMargins={noMargins}
+      subtitle={subtitle}
+    >
+      <TitleTypeComponent>{children}</TitleTypeComponent>
     </Container>
   )
 }
