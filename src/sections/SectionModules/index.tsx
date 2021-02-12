@@ -39,7 +39,7 @@ const SectionModules: React.FC = () => {
               {content.modules
                 .map((module, index) => (
                   <FlexContainer
-                    key={module.title}
+                    key={module.title.trim()}
                     paddingBottom="large"
                     gap="20px"
                     alignItems="center"
@@ -57,7 +57,7 @@ const SectionModules: React.FC = () => {
               {content.modules
                 .map((module, index) => (
                   <FlexContainer
-                    key={module.title}
+                    key={module.title.trim()}
                     paddingBottom="large"
                     gap="20px"
                     alignItems="center"
@@ -81,7 +81,7 @@ const SectionModules: React.FC = () => {
       <BackgroundContainer>
         <BackgroundFilter />
         <BackgroundImageContainer>
-          <Parallax x={[0, 50]}>
+          <Parallax x={[0, 20]}>
             <BackgroundImage src={backgroundImage} />
           </Parallax>
         </BackgroundImageContainer>

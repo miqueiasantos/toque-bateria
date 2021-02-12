@@ -13,6 +13,7 @@ import SectionThree from '~/sections/SectionThree'
 import SectionNumbers from '~/sections/SectionNumbers'
 import SectionVideoSlider from '~/sections/SectionVideoSlider'
 import SectionModules from '~/sections/SectionModules'
+import SectionBonus from '~/sections/SectionBonus'
 
 const Home = () => (
   <Layout>
@@ -34,6 +35,10 @@ const Home = () => (
     </CenterContainer>
 
     <SectionModules />
+
+    <CenterContainer paddingVertical="larger">
+      <SectionBonus />
+    </CenterContainer>
   </Layout>
 )
 

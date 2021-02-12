@@ -1,7 +1,7 @@
-import { Card, ContentBase } from '~/types'
+import { CardBase, ContentBase } from '~/types'
 
 interface Content extends ContentBase {
-  cards: Card[]
+  cards: CardBase[]
 }
 
 const content: Content = {

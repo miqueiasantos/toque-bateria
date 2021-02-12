@@ -27,13 +27,14 @@ export type Colors =
   | 'textAccent'
   | 'white'
 
-export interface Icon {
+export interface IconBase {
   name: string
   pack?: string
 }
 
-export interface Card {
-  icon?: Icon
+export interface CardBase {
+  icon?: IconBase
+  image?: string
   title?: string
   content?: string
 }
@@ -51,7 +52,7 @@ export interface ContentBase {
   callToAction?: string
   video?: VideoBase
   videos?: VideoBase[]
-  cards?: Card[]
+  cards?: CardBase[]
 }
 
 export interface SectionTitleBaseProps {
