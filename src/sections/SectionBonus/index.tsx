@@ -8,8 +8,9 @@ import CardTitle from '~/components/Card/CardTitle'
 import CardContent from '~/components/Card/CardContent'
 import CardImage from '~/components/Card/CardImage'
 import Button from '~/components/Button'
+import ModalVideo from '~/components/ModalVideo'
 
-import { Container } from './styles'
+import { Container, CardContainer } from './styles'
 
 import content from './content'
 
@@ -22,15 +23,17 @@ const SectionBonus: React.FC = () => {
 
       <FlexContainer gap="20px" paddingBottom="large">
         {content.cards.map(item => (
-          <FlexContainer column={4} key={item.title.trim()}>
-            <Card shadow withImage>
-              <FlexContainer alignItems="center" flexDirection="column">
-                <CardImage image={item.image} />
-                <CardTitle>{item.title}</CardTitle>
-                <CardContent>{item.content}</CardContent>
-              </FlexContainer>
-            </Card>
-          </FlexContainer>
+          <>
+            <CardContainer column={4} key={item.title.trim()}>
+              <Card shadow withImage>
+                <FlexContainer alignItems="center" flexDirection="column">
+                  <CardImage image={item.image} />
+                  <CardTitle>{item.title}</CardTitle>
+                  <CardContent>{item.content}</CardContent>
+                </FlexContainer>
+              </Card>
+            </CardContainer>
+          </>
         ))}
       </FlexContainer>
 
