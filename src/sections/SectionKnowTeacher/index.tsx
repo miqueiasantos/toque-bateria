@@ -2,8 +2,9 @@ import React from 'react'
 
 import { CenterContainer, FlexContainer } from '~/components/Grid'
 import SectionTitle from '~/components/SectionTitle'
+import Icon from '~/components/Icon'
 
-import { Container, Content } from './styles'
+import { Container, Content, Avatar, CallToAction } from './styles'
 
 import content from './content'
 
@@ -11,8 +12,14 @@ const SectionKnowTeacher: React.FC = () => {
   return (
     <Container>
       <CenterContainer paddingVertical="larger">
-        <FlexContainer>
-          <FlexContainer column={4}>col 1</FlexContainer>
+        <FlexContainer gap="20px" alignItems="center">
+          <FlexContainer column={4} flexDirection="column" alignItems="center">
+            <Avatar src={content.avatar} />
+            <CallToAction to="/">
+              <Icon {...content.callToActionWithIcon.icon} />
+              {content.callToActionWithIcon.text}
+            </CallToAction>
+          </FlexContainer>
           <FlexContainer column={8} flexDirection="column">
             <SectionTitle theme="dark" noMargins>
               {content.title}

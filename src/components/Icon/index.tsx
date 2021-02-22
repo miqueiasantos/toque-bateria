@@ -2,23 +2,18 @@ import React from 'react'
 
 import * as Material from '@styled-icons/material'
 import * as IoniconsSolid from '@styled-icons/ionicons-solid'
-import * as IoniconsSharp from '@styled-icons/ionicons-sharp'
+import * as EntypoSocial from '@styled-icons/entypo-social'
+
 import { SIZES } from '~/styles/variables'
+import { IconBase } from '~/types'
 
-interface IconProps {
-  name: string
-  size?: string
-  title?: string
-  iconPack?: string
-}
-
-const Icon: React.FC<IconProps> = ({ name, size = SIZES.large, iconPack }) => {
+const Icon: React.FC<IconBase> = ({ name, size = SIZES.large, pack }) => {
   const getIconPack = () => {
-    switch (iconPack) {
+    switch (pack) {
       case 'ionicons-solid':
         return IoniconsSolid
-      case 'ionicons-sharp':
-        return IoniconsSharp
+      case 'entypo-social':
+        return EntypoSocial
       default:
         return Material
     }

@@ -2549,12 +2549,12 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@styled-icons/ionicons-sharp@^10.24.0":
-  version "10.24.0"
-  resolved "https://registry.yarnpkg.com/@styled-icons/ionicons-sharp/-/ionicons-sharp-10.24.0.tgz#09ac0e5bc8efe5064a50a276f750e0a2242f2f85"
-  integrity sha512-xC3Rz4v/7wYYLMH9m5nZdz2iQi6iYkIZxh93NoZwhNb0sG+k7ycKMDh2QqMDVhkoh6cfodR99ODGlDh2cxgSiQ==
+"@styled-icons/entypo-social@^10.18.0":
+  version "10.18.0"
+  resolved "https://registry.yarnpkg.com/@styled-icons/entypo-social/-/entypo-social-10.18.0.tgz#1aeb904cc057b17353ea5a4b52175a61d39bcb91"
+  integrity sha512-JjDRJrsLi2IhjPBLYPJW+SNOijcOAOHu6ulyEJmtIRCKGzwdFJaXFPVxhULDnsr1vwBlxYdyvpz72liZH1gZpw==
   dependencies:
-    "@babel/runtime" "^7.12.5"
+    "@babel/runtime" "^7.10.5"
     "@styled-icons/styled-icon" "^10.6.0"
 
 "@styled-icons/ionicons-solid@^10.24.0":

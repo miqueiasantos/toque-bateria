@@ -29,7 +29,8 @@ export type Colors =
 
 export interface IconBase {
   name: string
-  pack?: string
+  size?: string
+  pack?: 'material' | 'ionicons-solid' | 'entypo-social'
 }
 
 export interface CardBase {
