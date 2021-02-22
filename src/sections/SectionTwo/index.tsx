@@ -16,13 +16,13 @@ import content from './content'
 const SectionTwo: React.FC = () => {
   return (
     <FlexContainer gap="20px" paddingTop="large" paddingBottom="larger">
-      <FlexContainer flexGrow={1} column={2}>
+      <FlexContainer flexGrow={1} column={6}>
         <Video {...content.video} />
       </FlexContainer>
       <FlexContainer
         flexDirection="column"
         flexGrow={1}
-        column={2}
+        column={6}
         flexWrap="nowrap"
       >
         <SectionTitle noMargins>{content.title}</SectionTitle>
@@ -35,7 +35,7 @@ const SectionTwo: React.FC = () => {
 
         <FlexContainer gap="20px">
           {content.cards.map((item, index) => (
-            <FlexContainer column={2} key={String(index)}>
+            <FlexContainer column={6} key={String(index)}>
               <Card fullColor={COLORS.primary} fullSize>
                 <Icon {...item.icon} />
                 <CardContent>{item.content}</CardContent>

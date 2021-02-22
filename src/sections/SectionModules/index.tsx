@@ -35,7 +35,7 @@ const SectionModules: React.FC = () => {
           </SectionTitle>
 
           <FlexContainer>
-            <FlexContainer flexDirection="column" column={2}>
+            <FlexContainer flexDirection="column" column={6}>
               {content.modules
                 .map((module, index) => (
                   <FlexContainer
@@ -53,7 +53,7 @@ const SectionModules: React.FC = () => {
                 .slice(0, 5)}
             </FlexContainer>
 
-            <FlexContainer flexDirection="column" column={2}>
+            <FlexContainer flexDirection="column" column={6}>
               {content.modules
                 .map((module, index) => (
                   <FlexContainer

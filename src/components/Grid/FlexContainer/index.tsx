@@ -33,7 +33,7 @@ const FlexContainer = styled.div<FlexContainerProps>`
   justify-content: ${props => props.justifyContent};
   align-items: ${props => props.alignItems};
 
-  ${props => props.column && `width: ${100 / props.column}%;`}
+  ${props => props.column && `width: ${100 * (props.column / 12)}%;`}
 
   ${props => props.gap && `gap: ${props.gap};`}
   ${props => props.alignContent && `align-content: ${props.alignContent};`}

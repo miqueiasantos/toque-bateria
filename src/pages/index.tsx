@@ -14,6 +14,7 @@ import SectionNumbers from '~/sections/SectionNumbers'
 import SectionVideoSlider from '~/sections/SectionVideoSlider'
 import SectionModules from '~/sections/SectionModules'
 import SectionBonus from '~/sections/SectionBonus'
+import SectionKnowTeacher from '~/sections/SectionKnowTeacher'
 
 const Home = () => (
   <Layout>
@@ -39,6 +40,8 @@ const Home = () => (
     <CenterContainer paddingVertical="larger">
       <SectionBonus />
     </CenterContainer>
+
+    <SectionKnowTeacher />
   </Layout>
 )
 
