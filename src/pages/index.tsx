@@ -15,6 +15,7 @@ import SectionVideoSlider from '~/sections/SectionVideoSlider'
 import SectionModules from '~/sections/SectionModules'
 import SectionBonus from '~/sections/SectionBonus'
 import SectionKnowTeacher from '~/sections/SectionKnowTeacher'
+import SectionPlans from '~/sections/SectionPlans'
 
 const Home = () => (
   <Layout>
@@ -42,6 +43,8 @@ const Home = () => (
     </CenterContainer>
 
     <SectionKnowTeacher />
+
+    <SectionPlans />
   </Layout>
 )
 

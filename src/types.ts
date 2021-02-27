@@ -30,7 +30,7 @@ export type Colors =
 export interface IconBase {
   name: string
   size?: string
-  pack?: 'material' | 'ionicons-solid' | 'entypo-social'
+  pack?: 'material' | 'ionicons-solid' | 'entypo-social' | 'eva-outline'
 }
 
 export interface CardBase {
@@ -61,4 +61,18 @@ export interface SectionTitleBaseProps {
   theme?: 'light' | 'dark'
   subtitle?: boolean
   noMargins?: boolean
+}
+
+export interface PlanFeatures {
+  title: string
+  active: boolean
+}
+
+export interface Plan {
+  type: string
+  fullPrice: number
+  installmentsPrice: number
+  description: string
+  features: PlanFeatures[]
+  callToAction: string
 }
