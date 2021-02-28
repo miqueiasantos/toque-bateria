@@ -4,6 +4,10 @@ import styled from 'styled-components'
 import { FlexContainer } from '~/components/Grid'
 import { COLORS, SIZES } from '~/styles/variables'
 
+import { NavbarProps } from '.'
+
+interface MenuButtonProps extends NavbarProps {}
+
 export const Container = styled(FlexContainer)`
   margin-right: ${SIZES.large};
 `
@@ -16,8 +20,9 @@ export const MenuList = styled(FlexContainer)`
 
 export const MenuItem = styled.li``
 
-export const MenuButton = styled(Link)`
-  color: ${COLORS.textSecondary};
+export const MenuButton = styled(Link)<MenuButtonProps>`
+  color: ${props =>
+    props.theme === 'light' ? COLORS.textSecondary : COLORS.white};
   font-weight: 500;
   position: relative;
 
@@ -27,7 +32,8 @@ export const MenuButton = styled(Link)`
     bottom: -5px;
     height: 2px;
     width: 100%;
-    background-color: ${COLORS.textSecondary};
+    background-color: ${props =>
+      props.theme === 'light' ? COLORS.textSecondary : COLORS.white};
     transform: scale3d(0, 1, 1) rotate(1deg);
     transition: all 0.3s;
     opacity: 0;
@@ -35,12 +41,14 @@ export const MenuButton = styled(Link)`
   }
 
   &:hover {
-    color: ${COLORS.primary};
+    color: ${props =>
+      props.theme === 'light' ? COLORS.primary : COLORS.white};
 
     &:after {
       opacity: 1;
       transform: scale3d(1, 1, 1) rotate(0);
-      background-color: ${COLORS.primary};
+      background-color: ${props =>
+        props.theme === 'light' ? COLORS.primary : COLORS.white};
     }
   }
 `

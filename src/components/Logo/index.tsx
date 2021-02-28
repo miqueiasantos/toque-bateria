@@ -1,6 +1,7 @@
 import React from 'react'
 
 import LogoHeader from '~/images/logo-header.png'
+import LogoFooter from '~/images/logo-footer.png'
 
 type LogoType = 'header' | 'footer'
 interface LogoProps {
@@ -13,7 +14,7 @@ const Logo: React.FC<LogoProps> = ({ type = 'header', siteName }) => {
     case 'header':
       return <img src={LogoHeader} alt={siteName} height="65px" />
     case 'footer':
-      return <img src={LogoHeader} alt={siteName} />
+      return <img src={LogoFooter} alt={siteName} height="193px" />
 
     default:
       return <img src={LogoHeader} alt={siteName} />

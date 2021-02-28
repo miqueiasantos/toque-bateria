@@ -2,6 +2,7 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from '~/components/Header'
+import Footer from '~/components/Footer'
 
 import 'normalize.css'
 import GlobalStyle from '~/styles/GlobalStyle'
@@ -25,6 +26,8 @@ const Layout: React.FC = ({ children }) => {
       <Header siteTitle={site.siteMetadata?.title} />
 
       <Container>{children}</Container>
+
+      <Footer />
     </>
   )
 }

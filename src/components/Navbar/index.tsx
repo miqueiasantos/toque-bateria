@@ -5,13 +5,19 @@ import { Container, MenuList, MenuItem, MenuButton } from './styles'
 
 import content from './content'
 
-const Navbar: React.FC = () => {
+export interface NavbarProps {
+  theme?: 'light' | 'dark'
+}
+
+const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
   return (
     <Container as="nav" flexGrow={1} justifyContent="flex-end">
       <MenuList as="ul" gap={SIZES.large}>
         {content.map(item => (
           <MenuItem key={item.link}>
-            <MenuButton to={`/${item.link}`}>{item.text}</MenuButton>
+            <MenuButton theme={theme} to={`/${item.link}`}>
+              {item.text}
+            </MenuButton>
           </MenuItem>
         ))}
       </MenuList>

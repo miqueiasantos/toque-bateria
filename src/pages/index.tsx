@@ -43,7 +43,6 @@ const Home = () => (
     </CenterContainer>
 
     <SectionKnowTeacher />
-
     <SectionPlans />
   </Layout>
 )
