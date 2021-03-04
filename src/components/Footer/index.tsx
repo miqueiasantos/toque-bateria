@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               paddingBottom="normal"
             >
               {content.socialMedias.map(socialMedia => (
-                <SocialButton to={socialMedia.url}>
+                <SocialButton key={socialMedia.url} href={socialMedia.url}>
                   <Icon size="40px" {...socialMedia.icon} />
                 </SocialButton>
               ))}

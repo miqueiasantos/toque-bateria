@@ -49,10 +49,10 @@ const SectionVideoSlider: React.FC = () => {
       >
         {content.videos.map(video => (
           <FlexContainer
+            key={video.videoTitle.trim()}
             flexDirection="column"
             flexGrow={1}
             paddingHorizontal="larger"
-            key={video.videoTitle.trim()}
           >
             <Video {...video} />
             <VideoLabel>{video.videoTitle}</VideoLabel>

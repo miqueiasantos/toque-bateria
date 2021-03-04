@@ -28,7 +28,8 @@ const content: Content = {
     {
       image: imageCard,
       video: {
-        videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
+        // TODO: update this video
+        videoSrcURL: 'https://player.vimeo.com/video/340478854',
         videoTitle: 'A virada mais famosa do mundo!',
       },
       title: 'Tocando Músicas',

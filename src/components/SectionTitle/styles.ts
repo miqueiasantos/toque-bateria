@@ -22,7 +22,7 @@ export const Container = styled.div<SectionTitleBaseProps>`
     props.center &&
     css`
       text-align: center;
-    `}
+    `};
 `
 
 export const Title = styled.h2`

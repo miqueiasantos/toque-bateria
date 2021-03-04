@@ -37,8 +37,8 @@ const SectionBonus: React.FC = () => {
       <FlexContainer gap="20px" paddingBottom="large">
         {content.cards.map(item => (
           <CardContainer
-            column={4}
             key={item.title.trim()}
+            column={4}
             onClick={() => handleOpenModal(item.video)}
           >
             <Card shadow withImage>

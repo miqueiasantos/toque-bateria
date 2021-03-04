@@ -14,7 +14,8 @@ export const Container = styled.div<BadgeProps>`
 
   color: ${props => `${COLORS[props.textColor]}`};
   background-color: ${props => `${COLORS[props.backgroundColor]}`};
-  ${props => props.textColor && `color: ${COLORS[props.textColor]};`}
-  ${props => props.button && 'cursor: pointer;'}
-  ${props => props.disabled && 'opacity: .7; cursor: default;'}
+  ${props => props.textColor && `color: ${COLORS[props.textColor]};`};
+  ${props => props.button && 'cursor: pointer;'};
+  ${props => props.disabled && 'opacity: .7; cursor: default;'};
+  ${props => props.shadow && 'box-shadow: 0px 4px 4px 0px rgb(0 0 0 / 25%);'};
 `

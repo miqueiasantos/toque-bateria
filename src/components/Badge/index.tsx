@@ -10,6 +10,7 @@ export interface BadgeProps {
   backgroundColor?: Colors
   textColor?: Colors
   onClick?: (event: React.MouseEvent<HTMLDivElement, MouseEvent>) => void
+  shadow?: boolean
 }
 
 const Badge: React.FC<BadgeProps> = ({
@@ -19,6 +20,7 @@ const Badge: React.FC<BadgeProps> = ({
   backgroundColor = 'primaryAccent',
   textColor = 'textAccent',
   onClick,
+  shadow,
 }) => {
   return (
     <Container
@@ -28,6 +30,7 @@ const Badge: React.FC<BadgeProps> = ({
       backgroundColor={backgroundColor}
       textColor={textColor}
       onClick={onClick}
+      shadow={shadow}
     >
       {children}
     </Container>

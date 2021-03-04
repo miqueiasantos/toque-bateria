@@ -40,7 +40,8 @@ export const MenuButton = styled(Link)<MenuButtonProps>`
     content: '';
   }
 
-  &:hover {
+  &:hover,
+  &.active {
     color: ${props =>
       props.theme === 'light' ? COLORS.primary : COLORS.white};
 

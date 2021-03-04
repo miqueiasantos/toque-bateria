@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/toque-bateria',
+  pathPrefix: '/',
   siteMetadata: {
     title: `Toque Bateria`,
     description: `Conheça o maior curso online de bateria do Brasil`,
@@ -40,19 +40,8 @@ module.exports = {
         },
       },
     },
-    {
-      resolve: `gatsby-plugin-google-fonts-v2`,
-      options: {
-        fonts: [
-          {
-            family: 'DM Sans',
-            variable: true,
-            weights: ['100..900'],
-          },
-        ],
-      },
-    },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
