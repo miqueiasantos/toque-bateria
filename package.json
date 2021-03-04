@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "@fontsource/dm-sans": "^4.2.2",
     "@styled-icons/entypo-social": "^10.18.0",
     "@styled-icons/evaicons-outline": "^10.18.0",
     "@styled-icons/ionicons-solid": "^10.24.0",

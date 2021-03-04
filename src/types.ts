@@ -76,3 +76,18 @@ export interface Plan {
   features: PlanFeatures[]
   callToAction: string
 }
+
+export type LessonBase = string
+export interface SubmoduleBase {
+  title: string
+  lessons: LessonBase[]
+}
+
+export interface ModuleBase {
+  title: string
+  number?: number
+  lessons?: LessonBase[]
+  submodules?: SubmoduleBase[]
+  image?: string
+  video?: VideoBase
+}

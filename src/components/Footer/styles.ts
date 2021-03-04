@@ -17,7 +17,7 @@ export const Copyright = styled.p`
   text-align: center;
 `
 
-export const SocialButton = styled(Link)`
+export const SocialButton = styled.a`
   color: ${COLORS.white};
   &:hover {
     color: ${COLORS.primaryAccent};

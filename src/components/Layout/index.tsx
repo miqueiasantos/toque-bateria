@@ -4,6 +4,10 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 
+import "@fontsource/dm-sans/400.css"
+import "@fontsource/dm-sans/500.css"
+import "@fontsource/dm-sans/700.css"
+
 import 'normalize.css'
 import GlobalStyle from '~/styles/GlobalStyle'
 import { Container } from './styles'

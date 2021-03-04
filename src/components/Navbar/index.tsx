@@ -15,7 +15,11 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
       <MenuList as="ul" gap={SIZES.large}>
         {content.map(item => (
           <MenuItem key={item.link}>
-            <MenuButton theme={theme} to={`/${item.link}`}>
+            <MenuButton
+              theme={theme}
+              to={`/${item.link}`}
+              activeClassName="active"
+            >
               {item.text}
             </MenuButton>
           </MenuItem>
