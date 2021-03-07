@@ -5,12 +5,20 @@ export const Container = styled.div`
   margin-bottom: ${SIZES.large};
 `
 
+export const VideoContainer = styled.div`
+  margin-bottom: ${SIZES.large};
+`
+
+export const Image = styled.img`
+  margin-top: ${SIZES.large};
+`
+
 export const SubmoduleContainer = styled.div`
   margin-bottom: ${SIZES.large};
 `
 
 export const SubmoduleTitle = styled.div`
-margin-bottom: ${SIZES.small};
+  margin-bottom: ${SIZES.small};
   color: ${COLORS.secondaryAccent};
   font-size: 1.25em;
 `

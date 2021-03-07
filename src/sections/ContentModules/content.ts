@@ -4,10 +4,13 @@ interface Content extends Omit<ContentBase, 'title'> {
   modules: ModuleBase[][]
 }
 
+import module5Image from '~/images/module-5.png'
+
 const content: Content = {
   modules: [
     [
       {
+        // MODULE 1
         title: 'Grooves',
         number: 1,
         lessons: [
@@ -40,10 +43,133 @@ const content: Content = {
         ],
       },
       {
+        // MODULE 2
+        title: 'Viradas',
+        number: 2,
+        video: {
+          videoSrcURL: 'https://player.vimeo.com/video/413096952',
+          videoTitle: 'Grooves - Apresentação',
+        },
+        lessons: [
+          'Aula 1 – Conceito do curso',
+          'Aula 2 – Como estudar',
+          'Aula 3 – O que são viradas e fills?',
+          'Aula 4 – Tamanho de viradas',
+          'Aula 5 – Viradas começando no meio dos tempos',
+          'Aula 6 – Viradas distribuindo um tempo do Rulo Simples',
+          'Aula 7 – Viradas distribuindo meio tempo do Rulo Simples',
+          'Aula 8 – Viradas de um tempo na caixa com novas figuras musicais',
+          'Aula 9 a 14 – Viradas de dois tempos na caixa',
+          'Aula 10 – Viradas de dois tempos na caixa 02',
+          'Aula 11 – Viradas de dois tempos na caixa 03',
+          'Aula 12 – Viradas de dois tempos na caixa 04',
+          'Aula 13 – Viradas de dois tempos na caixa 05',
+          'Aula 14 – Viradas de dois tempos na caixa 06',
+          'Aula 15 – Viradas de quatro tempos na caixa',
+          'Aula 16 – Transcrições de viradas na caixa',
+          'Aula 17 – Viradas de um tempo nos tambores 01',
+          'Aula 18 – Viradas de um tempo nos tambores 02',
+          'Aula 19 – Viradas de dois tempos nos tambores 01',
+          'Aula 20 – Viradas de dois tempos nos tambores 02',
+          'Aula 19 – Viradas de quatro tempos nos tambores 01',
+          'Aula 20 – Viradas de quatro tempos nos tambores 02',
+          'Aula 21 – Transcrições de viradas nos tambores',
+          'Aula 22 e 23 – Viradas com bumbo 01',
+          'Aula 24 – Transcrições de viradas com bumbo',
+          'Aula 25 – Viradas com acentuações 01',
+          'Aula 26 – Viradas com acentuações 02',
+          'Aula 27 – Transcrições de viradas com acentuações',
+          'Aula 28 – Viradas com Flams',
+          'Aula 29 – Viradas com Flams 01',
+          'Aula 30 – Viradas com Flams 02',
+        ],
+      },
+      {
+        // MODULE 4
+        title: 'Técnica de Pés',
+        number: 4,
+        lessons: [
+          'Aula 1 – Exercício para precisão e controle 01',
+          'Aula 2 – Exercícios para precisão e controle 02 a 05',
+          'Aula 3 – Exercício para resistência e velocidade',
+          'Aula 4 – Distribuindo um toque de bumbo no Rulo Simples',
+          'Aula 5 – Combinações de caixa e bumbo com um toque',
+          'Aula 6 – Mudando a condução dos exercícios com um toque',
+          'Aula 7 – Aplicando as distribuições com pratos',
+          'Aula 8 – Aplicando as combinações em viradas',
+          'Aula 9 - Distribuindo dois toques de bumbo no Rulo Simples',
+          'Aula 10 - Combinações de caixa e bumbo com dois toques',
+          'Aula 11 - Mudando a condução dos exercícios com dois toques',
+          'Aula 12 – Aplicando as distribuições de dois toques com pratos',
+          'Aula 13 – Aplicando as combinações de dois toques em viradas',
+          'Aula 14 – Precisão e controle do toque duplo',
+          'Aula 15 – Toque duplo de bumbo rápido – Tipos de execução',
+          'Aula 16 – Toque duplo de bumbo rápido – Exercícios em fusas',
+          'Aula 17 – Toque duplo de bumbo rápido – Exercícios em fusas e sextinas',
+          'Aula 18 – Grooves com toque duplo de bumbo rápido',
+        ],
+      },
+
+      {
+        // MODULE 6
+        title: 'Grooves de Shuffle',
+        number: 6,
+        lessons: [
+          'Aula 1 – O feeling do Shuffle, divisão rítmica, escrita e aplicações',
+          'Aula 2 – Grooves dobrando bumbos',
+          'Aula 3 – Grooves dobrando caixas',
+          'Aula 4 – Grooves com bumbo no meio dos tempos',
+          'Aula 5 – Grooves com notas fantasmas 01',
+          'Aula 6 – Grooves com notas fantasmas 02',
+          'Aula 7 – O Shuffle “Trenzinho” e com condução de Jazz',
+          'Aula 8 – Half time Shuffle',
+          'Aula 9 – Transcrições e aplicações de músicas',
+        ],
+      },
+      {
+        // MODULE 7
+        title: 'Reggae',
+        number: 7,
+        lessons: [
+          'Aula 1 – Contagem dos tempos, escrita, One drop e Four drop',
+          'Aula 2 – Grooves de um compasso',
+          'Aula 3 – Grooves de dois compassos',
+          'Aula 4 - Grooves mudando a condução com notas no aro',
+          'Aula 5 – Acentuações na condução',
+          'Aula 6 – Mesclando todos os conceitos',
+          'Aula 7 – Pop/Fusion Reggae',
+          'Aula 8 - Transcrições e aplicações de músicas',
+        ],
+      },
+      {
+        // MODULE 8
+        title: 'Montando a bateria / Posicionamento',
+        number: 8,
+        lessons: [
+          'Aula 1 – Como montar a bateria',
+          'Aula 2 – Como segurar as baquetas',
+          'Aula 3 – Posição das baquetas no instrumento',
+          'Aula 4 – Como posicionar e tocar os pés',
+        ],
+      },
+      {
+        // MODULE 9
+        title: 'Tocando com o Metrônomo',
+        number: 9,
+        lessons: [
+          'Aula 1 – Exercícios de divisão rítmica e aplicando divisões rítmicas como viradas',
+          'Aula 2 – Omitindo tempos do metrônomo',
+          'Aula 3 – Interpretando o metrônomo de diferentes maneiras',
+        ],
+      },
+    ],
+    [
+      {
+        // MODULE 3
         title: 'Técnica de Mãos',
         number: 3,
         video: {
-          videoSrcURL: 'https://player.vimeo.com/video/340478854',
+          videoSrcURL: 'https://player.vimeo.com/video/468658100',
           videoTitle: 'Fórmula de compasso - Compasso composto',
         },
         submodules: [
@@ -159,124 +285,14 @@ const content: Content = {
         ],
       },
       {
-        title: 'Técnica de Pés',
-        number: 4,
-        lessons: [
-          'Aula 1 – Exercício para precisão e controle 01',
-          'Aula 2 – Exercícios para precisão e controle 02 a 05',
-          'Aula 3 – Exercício para resistência e velocidade',
-          'Aula 4 – Distribuindo um toque de bumbo no Rulo Simples',
-          'Aula 5 – Combinações de caixa e bumbo com um toque',
-          'Aula 6 – Mudando a condução dos exercícios com um toque',
-          'Aula 7 – Aplicando as distribuições com pratos',
-          'Aula 8 – Aplicando as combinações em viradas',
-          'Aula 9 - Distribuindo dois toques de bumbo no Rulo Simples',
-          'Aula 10 - Combinações de caixa e bumbo com dois toques',
-          'Aula 11 - Mudando a condução dos exercícios com dois toques',
-          'Aula 12 – Aplicando as distribuições de dois toques com pratos',
-          'Aula 13 – Aplicando as combinações de dois toques em viradas',
-          'Aula 14 – Precisão e controle do toque duplo',
-          'Aula 15 – Toque duplo de bumbo rápido – Tipos de execução',
-          'Aula 16 – Toque duplo de bumbo rápido – Exercícios em fusas',
-          'Aula 17 – Toque duplo de bumbo rápido – Exercícios em fusas e sextinas',
-          'Aula 18 – Grooves com toque duplo de bumbo rápido',
-        ],
-      },
-      {
-        title: 'Grooves de Shuffle',
-        number: 6,
-        lessons: [
-          'Aula 1 – O feeling do Shuffle, divisão rítmica, escrita e aplicações',
-          'Aula 2 – Grooves dobrando bumbos',
-          'Aula 3 – Grooves dobrando caixas',
-          'Aula 4 – Grooves com bumbo no meio dos tempos',
-          'Aula 5 – Grooves com notas fantasmas 01',
-          'Aula 6 – Grooves com notas fantasmas 02',
-          'Aula 7 – O Shuffle “Trenzinho” e com condução de Jazz',
-          'Aula 8 – Half time Shuffle',
-          'Aula 9 – Transcrições e aplicações de músicas',
-        ],
-      },
-      {
-        title: 'Reggae',
-        number: 7,
-        lessons: [
-          'Aula 1 – Contagem dos tempos, escrita, One drop e Four drop',
-          'Aula 2 – Grooves de um compasso',
-          'Aula 3 – Grooves de dois compassos',
-          'Aula 4 - Grooves mudando a condução com notas no aro',
-          'Aula 5 – Acentuações na condução',
-          'Aula 6 – Mesclando todos os conceitos',
-          'Aula 7 – Pop/Fusion Reggae',
-          'Aula 8 - Transcrições e aplicações de músicas',
-        ],
-      },
-      {
-        title: 'Montando a bateria / Posicionamento',
-        number: 8,
-        lessons: [
-          'Aula 1 – Como montar a bateria',
-          'Aula 2 – Como segurar as baquetas',
-          'Aula 3 – Posição das baquetas no instrumento',
-          'Aula 4 – Como posicionar e tocar os pés',
-        ],
-      },
-      {
-        title: 'Tocando com o Metrônomo',
-        number: 9,
-        lessons: [
-          'Aula 1 – Exercícios de divisão rítmica e aplicando divisões rítmicas como viradas',
-          'Aula 2 – Omitindo tempos do metrônomo',
-          'Aula 3 – Interpretando o metrônomo de diferentes maneiras',
-        ],
-      },
-    ],
-    [
-      {
-        title: 'Viradas',
-        number: 2,
-        video: {
-          videoSrcURL: 'https://player.vimeo.com/video/340478854',
-          videoTitle: 'Fórmula de compasso - Compasso composto',
-        },
-        lessons: [
-          'Aula 1 – Conceito do curso',
-          'Aula 2 – Como estudar',
-          'Aula 3 – O que são viradas e fills?',
-          'Aula 4 – Tamanho de viradas',
-          'Aula 5 – Viradas começando no meio dos tempos',
-          'Aula 6 – Viradas distribuindo um tempo do Rulo Simples',
-          'Aula 7 – Viradas distribuindo meio tempo do Rulo Simples',
-          'Aula 8 – Viradas de um tempo na caixa com novas figuras musicais',
-          'Aula 9 a 14 – Viradas de dois tempos na caixa',
-          'Aula 10 – Viradas de dois tempos na caixa 02',
-          'Aula 11 – Viradas de dois tempos na caixa 03',
-          'Aula 12 – Viradas de dois tempos na caixa 04',
-          'Aula 13 – Viradas de dois tempos na caixa 05',
-          'Aula 14 – Viradas de dois tempos na caixa 06',
-          'Aula 15 – Viradas de quatro tempos na caixa',
-          'Aula 16 – Transcrições de viradas na caixa',
-          'Aula 17 – Viradas de um tempo nos tambores 01',
-          'Aula 18 – Viradas de um tempo nos tambores 02',
-          'Aula 19 – Viradas de dois tempos nos tambores 01',
-          'Aula 20 – Viradas de dois tempos nos tambores 02',
-          'Aula 19 – Viradas de quatro tempos nos tambores 01',
-          'Aula 20 – Viradas de quatro tempos nos tambores 02',
-          'Aula 21 – Transcrições de viradas nos tambores',
-          'Aula 22 e 23 – Viradas com bumbo 01',
-          'Aula 24 – Transcrições de viradas com bumbo',
-          'Aula 25 – Viradas com acentuações 01',
-          'Aula 26 – Viradas com acentuações 02',
-          'Aula 27 – Transcrições de viradas com acentuações',
-          'Aula 28 – Viradas com Flams',
-          'Aula 29 – Viradas com Flams 01',
-          'Aula 30 – Viradas com Flams 02',
-        ],
-      },
-      {
+        // MODULE 5
         title: 'Samba',
         number: 5,
-        image: '',
+        video: {
+          videoSrcURL: 'https://player.vimeo.com/video/484043564',
+          videoTitle: 'Aula - Aplicação e distribuição dos rudimentos na baterias'
+        },
+        image: module5Image,
         lessons: [
           'Aula 1 – O ostinato do samba no chimbau e bumbo / Aplicações rítmicas com o aro',
           'Aula 2 – Melodias de um compasso',

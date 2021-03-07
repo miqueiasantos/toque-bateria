@@ -15,10 +15,7 @@ const ModuleTitle: React.FC<ModuleTitleProps> = ({ title, number }) => (
     <Badge backgroundColor="white" textColor="textAccent" shadow>
       <Number>{number}</Number>
     </Badge>
-    <Title>
-      Módulo
-      {title}
-    </Title>
+    <Title>Módulo {title}</Title>
   </FlexContainer>
 )
 

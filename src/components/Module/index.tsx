@@ -5,7 +5,13 @@ import Video from '../Video'
 
 import ModuleTitle from './ModuleTitle'
 
-import { Container, SubmoduleTitle, SubmoduleContainer, Lesson } from './styles'
+import {
+  Container,
+  SubmoduleTitle,
+  SubmoduleContainer,
+  Lesson,
+  Image,
+} from './styles'
 
 interface ModuleProps extends ModuleBase {}
 
@@ -35,6 +41,8 @@ const Module: React.FC<ModuleProps> = ({
               ))}
           </SubmoduleContainer>
         ))}
+
+      {image && <Image src={image} />}
     </Container>
   )
 }

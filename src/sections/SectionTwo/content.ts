@@ -6,8 +6,8 @@ interface Content extends ContentBase {
 
 const content: Content = {
   video: {
-    videoSrcURL: 'https://www.youtube.com/embed/q_8u3c4V6sE',
-    videoTitle: 'A virada mais famosa do mundo!',
+    videoSrcURL: 'https://player.vimeo.com/video/470025275',
+    videoTitle: 'Viradas com acentuações 01',
   },
   title: 'O único curso com o recurso Estude Junto!',
   shortContent: 'Aproveite melhor seu tempo de estudo:',
