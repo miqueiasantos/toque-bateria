@@ -1121,6 +1121,11 @@
     querystring "^0.2.0"
     strip-ansi "^6.0.0"
 
+"@fontsource/dm-sans@^4.2.2":
+  version "4.2.2"
+  resolved "https://registry.yarnpkg.com/@fontsource/dm-sans/-/dm-sans-4.2.2.tgz#72601e1ced27468a5fb84853806f5611722961ca"
+  integrity sha512-dW370yx7ZF5/wot4+gdZs+uXQFJ1hxtbwz4M7Kgtca98IMxyLUtS2wRgmIKqNLYGX+lJq2OHJS8xZtj7Dvw2rw==
+
 "@graphql-codegen/core@^1.13.1":
   version "1.17.9"
   resolved "https://registry.yarnpkg.com/@graphql-codegen/core/-/core-1.17.9.tgz#c03e71018ff04d26f5139a2d90a32b31d3bb2b43"
