@@ -5,6 +5,7 @@ import { COLORS, RADIUS, SIZES } from '~/styles/variables'
 import { CardProps } from '.'
 
 export const Container = styled.div<CardProps>`
+  height: 100%;
   position: relative;
   padding: ${SIZES.normal};
   background-color: ${COLORS.white};

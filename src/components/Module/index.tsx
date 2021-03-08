@@ -11,6 +11,7 @@ import {
   SubmoduleContainer,
   Lesson,
   Image,
+  VideoContainer,
 } from './styles'
 
 interface ModuleProps extends ModuleBase {}
@@ -25,9 +26,14 @@ const Module: React.FC<ModuleProps> = ({
 }) => {
   return (
     <Container>
-      {video && <Video {...video} />}
+      {video && (
+        <VideoContainer>
+          <Video {...video} />
+        </VideoContainer>
+      )}
 
       <ModuleTitle title={title} number={number} />
+
       {lessons &&
         lessons.map(lesson => <Lesson key={lesson.trim()}>{lesson}</Lesson>)}
 

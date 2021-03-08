@@ -5,7 +5,7 @@ import { CardImageProps } from '.'
 export const Container = styled.div<CardImageProps>`
   position: absolute;
   top: 0;
-  height: 150px;
+  padding-top: 56.25%;
   width: 100%;
   background-color: black;
   background-size: cover;

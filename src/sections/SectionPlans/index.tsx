@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { CenterContainer, FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import SectionTitle from '~/components/SectionTitle'
 import CardPlan from '~/components/CardPlan'
 
@@ -16,41 +16,48 @@ import content from './content'
 
 const SectionPlans: React.FC = () => {
   return (
-    <CenterContainer paddingVertical="larger">
+    <Grid.FlexContainer paddingVertical="larger">
       <SectionTitle center>{content.title}</SectionTitle>
 
-      <FlexContainer gap="20px" paddingBottom="larger">
+      <Grid.FlexRow paddingBottom="larger">
         {content.plans.map(plan => (
-          <FlexContainer key={plan.type} column={12} flexDirection="column">
+          <Grid.FlexColumn
+            key={plan.type}
+            lg={4}
+            flexDirection="column"
+            marginBottom="normal"
+          >
             <CardPlan {...plan} />
-          </FlexContainer>
+          </Grid.FlexColumn>
         ))}
-      </FlexContainer>
+      </Grid.FlexRow>
 
-      <FlexContainer justifyContent="center">
-        <WarrantyContainer gap="20px" alignItems="center">
-          <FlexContainer>
-            <WarrantyBadge
-              flexDirection="column"
-              justifyContent="center"
-              alignItems="center"
-            >
-              <WarrantyDays>{content.warranty.days}</WarrantyDays>
-              <span>DIAS</span>
-            </WarrantyBadge>
-          </FlexContainer>
+      <Grid.FlexContainer fluid>
+        <Grid.FlexRow justifyContent="center">
+          <WarrantyContainer alignItems="center">
+            <Grid.FlexColumn xs={2}>
+              <WarrantyBadge
+                flexDirection="column"
+                justifyContent="center"
+                alignItems="center"
+              >
+                <WarrantyDays>{content.warranty.days}</WarrantyDays>
+                <span>DIAS</span>
+              </WarrantyBadge>
+            </Grid.FlexColumn>
 
-          <FlexContainer flexDirection="column">
-            <WarrantyShortDescription>
-              {content.warranty.shortDescription}
-            </WarrantyShortDescription>
-            <WarrantyFullDescription>
-              {content.warranty.fullDescription}
-            </WarrantyFullDescription>
-          </FlexContainer>
-        </WarrantyContainer>
-      </FlexContainer>
-    </CenterContainer>
+            <Grid.FlexColumn xs={10} flexDirection="column">
+              <WarrantyShortDescription>
+                {content.warranty.shortDescription}
+              </WarrantyShortDescription>
+              <WarrantyFullDescription>
+                {content.warranty.fullDescription}
+              </WarrantyFullDescription>
+            </Grid.FlexColumn>
+          </WarrantyContainer>
+        </Grid.FlexRow>
+      </Grid.FlexContainer>
+    </Grid.FlexContainer>
   )
 }
 

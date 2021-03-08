@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { COLORS } from '~/styles/variables'
+import { COLORS, SIZES } from '~/styles/variables'
 
 export const Container = styled.footer`
   color: ${COLORS.white};
@@ -15,8 +15,14 @@ export const Copyright = styled.p`
   text-align: center;
 `
 
+export const SocialButtonContainer = styled.div`
+  margin-top: ${SIZES.large};
+  /* text-align: right; */
+`
+
 export const SocialButton = styled.a`
   color: ${COLORS.white};
+  margin: ${SIZES.small};
   &:hover {
     color: ${COLORS.primaryAccent};
   }

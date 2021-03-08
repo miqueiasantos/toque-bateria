@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '~/components/Layout'
 import SEO from '~/components/SEO'
 
-import { CenterContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import ContentBanner from '~/sections/ContentBanner'
 import ContentModules from '~/sections/ContentModules'
@@ -15,9 +15,9 @@ const Content: React.FC = () => {
 
       <ContentBanner />
 
-      <CenterContainer marginVertical="larger">
+      <Grid.FlexContainer marginVertical="larger">
         <ContentModules />
-      </CenterContainer>
+      </Grid.FlexContainer>
     </Layout>
   )
 }

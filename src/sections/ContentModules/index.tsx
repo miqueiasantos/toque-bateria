@@ -1,26 +1,26 @@
 import React from 'react'
 import Module from '~/components/Module'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 // import { Container } from './styles';
 
 import content from './content'
 
 const ContentModules: React.FC = () => {
   return (
-    <FlexContainer gap="30px">
+    <Grid.FlexRow gap="30px">
       {content.modules.map((column, index) => (
-        <FlexContainer
+        <Grid.FlexColumn
           key={column[index].title.trim()}
-          column={6}
+          md={6}
           flexDirection="column"
         >
           {column.map(module => (
             <Module key={module.title.trim()} {...module} />
           ))}
-        </FlexContainer>
+        </Grid.FlexColumn>
       ))}
-    </FlexContainer>
+    </Grid.FlexRow>
   )
 }
 

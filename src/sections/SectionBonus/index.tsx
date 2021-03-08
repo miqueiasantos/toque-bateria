@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react'
 import Highlight from 'react-highlighter'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import SectionTitle from '~/components/SectionTitle'
 import Card from '~/components/Card'
 import CardTitle from '~/components/Card/CardTitle'
@@ -34,27 +34,29 @@ const SectionBonus: React.FC = () => {
         <Highlight search={content.titleHighlight}>{content.title}</Highlight>
       </SectionTitle>
 
-      <FlexContainer gap="20px" paddingBottom="large">
+      <Grid.FlexRow paddingBottom="large">
         {content.cards.map(item => (
           <CardContainer
             key={item.title.trim()}
-            column={4}
+            lg={3}
+            md={6}
+            marginBottom="normal"
             onClick={() => handleOpenModal(item.video)}
           >
             <Card shadow withImage>
-              <FlexContainer alignItems="center" flexDirection="column">
+              <Grid.Flex alignItems="center" flexDirection="column">
                 <CardImage image={item.video.videoSrcURL} videoThumb />
                 <CardTitle>{item.title}</CardTitle>
                 <CardContent>{item.content}</CardContent>
-              </FlexContainer>
+              </Grid.Flex>
             </Card>
           </CardContainer>
         ))}
-      </FlexContainer>
+      </Grid.FlexRow>
 
-      <FlexContainer justifyContent="center" paddingTop="large">
+      <Grid.Flex justifyContent="center" paddingTop="large">
         <Button>{content.callToAction}</Button>
-      </FlexContainer>
+      </Grid.Flex>
 
       <ModalVideo
         isOpen={modalOpen}

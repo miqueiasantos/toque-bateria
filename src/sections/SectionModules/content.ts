@@ -1,11 +1,7 @@
-import { ContentBase } from '~/types'
-
-interface Module {
-  title
-}
+import { ContentBase, ModuleBase } from '~/types'
 
 interface Content extends ContentBase {
-  modules: Module[]
+  modules: ModuleBase[][]
 }
 
 const content: Content = {
@@ -13,33 +9,46 @@ const content: Content = {
   subtitle:
     'Confira todos os módulos que compõem o conteúdo que você terá acesso dentre vídeos, aulas e exercícios.',
   modules: [
-    {
-      title: 'Grooves',
-    },
-    {
-      title: 'Viradas',
-    },
-    {
-      title: 'Técnica de Mãos',
-    },
-    {
-      title: 'Técnica de Pés',
-    },
-    {
-      title: 'Samba',
-    },
-    {
-      title: 'Grooves de Shuffle',
-    },
-    {
-      title: 'Reggae',
-    },
-    {
-      title: 'Posicionamento / Montagem da Bateria',
-    },
-    {
-      title: 'Tocando com o Metrônomo',
-    },
+    [
+      {
+        title: 'Grooves',
+        number: 1,
+      },
+      {
+        title: 'Viradas',
+        number: 2,
+      },
+      {
+        title: 'Técnica de Mãos',
+        number: 3,
+      },
+      {
+        title: 'Técnica de Pés',
+        number: 4,
+      },
+      {
+        title: 'Samba',
+        number: 5,
+      },
+    ],
+    [
+      {
+        title: 'Grooves de Shuffle',
+        number: 6,
+      },
+      {
+        title: 'Reggae',
+        number: 7,
+      },
+      {
+        title: 'Posicionamento / Montagem da Bateria',
+        number: 8,
+      },
+      {
+        title: 'Tocando com o Metrônomo',
+        number: 9,
+      },
+    ],
   ],
   callToAction: 'Ver cronograma completo',
 }

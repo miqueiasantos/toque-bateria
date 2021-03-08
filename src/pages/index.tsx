@@ -3,7 +3,7 @@ import React from 'react'
 import Layout from '~/components/Layout'
 import SEO from '~/components/SEO'
 
-import { CenterContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import HeroBanner from '~/sections/HeroBanner'
 import HeroVideo from '~/sections/HeroVideo'
@@ -24,23 +24,23 @@ const Home = () => (
     <HeroBanner />
     <HeroVideo />
 
-    <CenterContainer>
+    <Grid.FlexContainer>
       <SectionOne />
       <SectionTwo />
       <SectionThree />
-    </CenterContainer>
+    </Grid.FlexContainer>
 
     <SectionNumbers />
 
-    <CenterContainer marginVertical="larger">
+    <Grid.FlexContainer marginVertical="larger" fluid="lg">
       <SectionVideoSlider />
-    </CenterContainer>
+    </Grid.FlexContainer>
 
     <SectionModules />
 
-    <CenterContainer paddingVertical="larger">
+    <Grid.FlexContainer paddingVertical="larger">
       <SectionBonus />
-    </CenterContainer>
+    </Grid.FlexContainer>
 
     <SectionKnowTeacher />
     <SectionPlans />

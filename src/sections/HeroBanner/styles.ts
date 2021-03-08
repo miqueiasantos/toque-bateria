@@ -1,11 +1,11 @@
 import styled from 'styled-components'
 
 import { COLORS } from '~/styles/variables'
-import { CenterContainer as Center, FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import heroBackground from '~/images/hero-banner.png'
 
-export const Container = styled(FlexContainer)`
+export const Container = styled.div`
   background-color: ${COLORS.primary};
   height: 600px;
 `
@@ -37,7 +37,8 @@ export const FullDescription = styled.p`
   color: ${COLORS.white};
 `
 
-export const CenterContainer = styled(Center)`
+export const CenterContainer = styled(Grid.FlexContainer)`
+  height: 100%;
   background-image: url(${heroBackground});
   background-position: bottom right;
   background-repeat: no-repeat;

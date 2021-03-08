@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { COLORS } from '~/styles/variables'
+import { COLORS, SIZES } from '~/styles/variables'
 
 export const Number = styled.h2`
   margin: 0;
@@ -9,7 +9,7 @@ export const Number = styled.h2`
 `
 
 export const Title = styled.h3`
-  margin: 0;
+  margin: 0 0 0 ${SIZES.normal};
   font-size: 1.125em;
   font-weight: 400;
   color: ${COLORS.textAccent};

@@ -3,6 +3,8 @@ import { Parallax } from 'react-scroll-parallax'
 import CountUp from 'react-countup'
 import VisibilitySensor from 'react-visibility-sensor'
 
+import * as Grid from '~/components/Grid'
+
 import {
   Container,
   SectionContainer,
@@ -23,16 +25,14 @@ const SectionNumbers: React.FC = () => {
   return (
     <SectionContainer>
       <Container>
-        <CounterContainer>
+        <CounterContainer alignItems="center">
           {content.map(counter => (
             <Counter
               key={String(counter.number)}
-              column={4}
+              lg={3}
+              md={6}
               flexDirection="column"
               paddingVertical="large"
-              paddingHorizontal="normal"
-              justifyContent="center"
-              alignItems="center"
             >
               <CountUp
                 prefix="+ "

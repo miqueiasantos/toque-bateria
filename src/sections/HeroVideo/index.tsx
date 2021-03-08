@@ -1,20 +1,20 @@
 import React from 'react'
 
 import Video from '~/components/Video'
-import { CenterContainer, FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import content from './content'
 
 const HeroVideo: React.FC = () => {
   return (
-    <FlexContainer paddingVertical="larger">
-      <CenterContainer>
+    <Grid.FlexContainer paddingVertical="larger">
+      <Grid.FlexRow>
         <Video
           videoSrcURL={content.videoSrcURL}
           videoTitle={content.videoTitle}
         />
-      </CenterContainer>
-    </FlexContainer>
+      </Grid.FlexRow>
+    </Grid.FlexContainer>
   )
 }
 

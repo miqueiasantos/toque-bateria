@@ -1,7 +1,7 @@
 import React from 'react'
 import { Parallax } from 'react-scroll-parallax'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import SectionTitle from '~/components/SectionTitle'
 import Badge from '~/components/Badge'
 import Button from '~/components/Button'
@@ -34,47 +34,32 @@ const SectionModules: React.FC = () => {
             {content.subtitle}
           </SectionTitle>
 
-          <FlexContainer>
-            <FlexContainer flexDirection="column" column={6}>
-              {content.modules
-                .map((module, index) => (
-                  <FlexContainer
+          <Grid.FlexRow>
+            {content.modules.map((column, index) => (
+              <Grid.FlexColumn key={column[index].title.trim()} md={6}>
+                {column.map(module => (
+                  <Grid.FlexRow
                     key={module.title.trim()}
                     paddingBottom="large"
-                    gap="20px"
                     alignItems="center"
                   >
-                    <Badge backgroundColor="white" textColor="textAccent">
-                      <ModuleNumber>{index + 1}</ModuleNumber>
-                    </Badge>
-                    <ModuleTitle>Módulo {module.title}</ModuleTitle>
-                  </FlexContainer>
-                ))
-                .slice(0, 5)}
-            </FlexContainer>
+                    <Grid.FlexColumn xs="auto">
+                      <Badge backgroundColor="white" textColor="textAccent">
+                        <ModuleNumber>{module.number}</ModuleNumber>
+                      </Badge>
+                    </Grid.FlexColumn>
+                    <Grid.FlexColumn>
+                      <ModuleTitle>Módulo {module.title}</ModuleTitle>
+                    </Grid.FlexColumn>
+                  </Grid.FlexRow>
+                ))}
+              </Grid.FlexColumn>
+            ))}
+          </Grid.FlexRow>
 
-            <FlexContainer flexDirection="column" column={6}>
-              {content.modules
-                .map((module, index) => (
-                  <FlexContainer
-                    key={module.title.trim()}
-                    paddingBottom="large"
-                    gap="20px"
-                    alignItems="center"
-                  >
-                    <Badge backgroundColor="white" textColor="textAccent">
-                      <ModuleNumber>{index + 1}</ModuleNumber>
-                    </Badge>
-                    <ModuleTitle>Módulo {module.title}</ModuleTitle>
-                  </FlexContainer>
-                ))
-                .slice(5)}
-            </FlexContainer>
-          </FlexContainer>
-
-          <FlexContainer justifyContent="center">
+          <Grid.Flex justifyContent="center">
             <Button color="secondary">{content.callToAction}</Button>
-          </FlexContainer>
+          </Grid.Flex>
         </ModulesContentContainer>
       </ModulesContainer>
 

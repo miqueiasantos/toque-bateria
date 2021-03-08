@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import Badge from '~/components/Badge'
 
 import { Number, Title } from './styles'
@@ -11,12 +11,12 @@ interface ModuleTitleProps {
 }
 
 const ModuleTitle: React.FC<ModuleTitleProps> = ({ title, number }) => (
-  <FlexContainer paddingBottom="large" gap="20px" alignItems="center">
+  <Grid.Flex paddingBottom="large" alignItems="center">
     <Badge backgroundColor="white" textColor="textAccent" shadow>
       <Number>{number}</Number>
     </Badge>
     <Title>Módulo {title}</Title>
-  </FlexContainer>
+  </Grid.Flex>
 )
 
 export default ModuleTitle

@@ -1,12 +1,12 @@
 import styled from 'styled-components'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import { SIZES, COLORS, RADIUS } from '~/styles/variables'
 
 import badgeBackground from '~/images/badge-warranty.svg'
 
-export const WarrantyContainer = styled(FlexContainer)`
+export const WarrantyContainer = styled(Grid.FlexRow)`
   padding: ${SIZES.normal};
   max-width: 760px;
   font-size: 1.25em;
@@ -15,10 +15,10 @@ export const WarrantyContainer = styled(FlexContainer)`
   border-radius: ${RADIUS.normal};
 `
 
-export const WarrantyText = styled.span`
+export const WarrantyText = styled.div`
   margin: 0;
 `
-export const WarrantyBadge = styled(FlexContainer)`
+export const WarrantyBadge = styled(Grid.Flex)`
   width: 80px;
   height: 80px;
   background-image: url(${badgeBackground});

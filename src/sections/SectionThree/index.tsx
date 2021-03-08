@@ -1,7 +1,7 @@
 import React from 'react'
 import Highlight from 'react-highlighter'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import SectionTitle from '~/components/SectionTitle'
 import Button from '~/components/Button'
 
@@ -11,7 +11,7 @@ import content from './content'
 
 const SectionThree: React.FC = () => {
   return (
-    <FlexContainer
+    <Grid.FlexRow
       flexDirection="column"
       alignItems="center"
       paddingBottom="larger"
@@ -23,7 +23,7 @@ const SectionThree: React.FC = () => {
       <FullContent>{content.fullContent}</FullContent>
 
       <Button>{content.callToAction}</Button>
-    </FlexContainer>
+    </Grid.FlexRow>
   )
 }
 

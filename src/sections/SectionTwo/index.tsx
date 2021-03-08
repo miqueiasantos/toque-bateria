@@ -1,7 +1,7 @@
 import React from 'react'
 import Highlight from 'react-highlighter'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import Video from '~/components/Video'
 import SectionTitle from '~/components/SectionTitle'
@@ -15,15 +15,16 @@ import content from './content'
 
 const SectionTwo: React.FC = () => {
   return (
-    <FlexContainer gap="20px" paddingTop="large" paddingBottom="larger">
-      <FlexContainer flexGrow={1} column={6}>
+    <Grid.FlexRow gap="20px" paddingTop="large" paddingBottom="larger">
+      <Grid.FlexColumn flexGrow={1} lg={6} marginBottom="normal">
         <Video {...content.video} />
-      </FlexContainer>
-      <FlexContainer
+      </Grid.FlexColumn>
+      <Grid.FlexColumn
         flexDirection="column"
         flexGrow={1}
-        column={6}
+        lg={6}
         flexWrap="nowrap"
+        marginBottom="normal"
       >
         <SectionTitle noMargins>{content.title}</SectionTitle>
         <ShortContent>{content.shortContent}</ShortContent>
@@ -33,18 +34,18 @@ const SectionTwo: React.FC = () => {
           </Highlight>
         </FullContent>
 
-        <FlexContainer gap="20px">
+        <Grid.FlexRow gap="20px">
           {content.cards.map((item, index) => (
-            <FlexContainer column={6} key={String(index)}>
+            <Grid.FlexColumn md={6} key={String(index)} marginBottom="normal">
               <Card fullColor={COLORS.primary} fullSize>
                 <Icon {...item.icon} />
                 <CardContent>{item.content}</CardContent>
               </Card>
-            </FlexContainer>
+            </Grid.FlexColumn>
           ))}
-        </FlexContainer>
-      </FlexContainer>
-    </FlexContainer>
+        </Grid.FlexRow>
+      </Grid.FlexColumn>
+    </Grid.FlexRow>
   )
 }
 

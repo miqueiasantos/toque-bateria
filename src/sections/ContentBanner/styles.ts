@@ -2,11 +2,11 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import { COLORS } from '~/styles/variables'
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import goToBackground from '~/images/go-to-bg.svg'
 
-export const Container = styled(FlexContainer)`
+export const Container = styled(Grid.Flex)`
   position: relative;
   color: white;
   text-align: center;
@@ -43,7 +43,7 @@ export const Subtitle = styled.h2`
   font-weight: 400;
 `
 
-export const GotoArrowContainer = styled(FlexContainer)`
+export const GotoArrowContainer = styled(Grid.Flex)`
   position: absolute;
   bottom: -1px;
   left: 0;

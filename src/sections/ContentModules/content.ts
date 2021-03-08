@@ -46,10 +46,7 @@ const content: Content = {
         // MODULE 2
         title: 'Viradas',
         number: 2,
-        video: {
-          videoSrcURL: 'https://player.vimeo.com/video/413096952',
-          videoTitle: 'Grooves - Apresentação',
-        },
+
         lessons: [
           'Aula 1 – Conceito do curso',
           'Aula 2 – Como estudar',
@@ -85,93 +82,9 @@ const content: Content = {
         ],
       },
       {
-        // MODULE 4
-        title: 'Técnica de Pés',
-        number: 4,
-        lessons: [
-          'Aula 1 – Exercício para precisão e controle 01',
-          'Aula 2 – Exercícios para precisão e controle 02 a 05',
-          'Aula 3 – Exercício para resistência e velocidade',
-          'Aula 4 – Distribuindo um toque de bumbo no Rulo Simples',
-          'Aula 5 – Combinações de caixa e bumbo com um toque',
-          'Aula 6 – Mudando a condução dos exercícios com um toque',
-          'Aula 7 – Aplicando as distribuições com pratos',
-          'Aula 8 – Aplicando as combinações em viradas',
-          'Aula 9 - Distribuindo dois toques de bumbo no Rulo Simples',
-          'Aula 10 - Combinações de caixa e bumbo com dois toques',
-          'Aula 11 - Mudando a condução dos exercícios com dois toques',
-          'Aula 12 – Aplicando as distribuições de dois toques com pratos',
-          'Aula 13 – Aplicando as combinações de dois toques em viradas',
-          'Aula 14 – Precisão e controle do toque duplo',
-          'Aula 15 – Toque duplo de bumbo rápido – Tipos de execução',
-          'Aula 16 – Toque duplo de bumbo rápido – Exercícios em fusas',
-          'Aula 17 – Toque duplo de bumbo rápido – Exercícios em fusas e sextinas',
-          'Aula 18 – Grooves com toque duplo de bumbo rápido',
-        ],
-      },
-
-      {
-        // MODULE 6
-        title: 'Grooves de Shuffle',
-        number: 6,
-        lessons: [
-          'Aula 1 – O feeling do Shuffle, divisão rítmica, escrita e aplicações',
-          'Aula 2 – Grooves dobrando bumbos',
-          'Aula 3 – Grooves dobrando caixas',
-          'Aula 4 – Grooves com bumbo no meio dos tempos',
-          'Aula 5 – Grooves com notas fantasmas 01',
-          'Aula 6 – Grooves com notas fantasmas 02',
-          'Aula 7 – O Shuffle “Trenzinho” e com condução de Jazz',
-          'Aula 8 – Half time Shuffle',
-          'Aula 9 – Transcrições e aplicações de músicas',
-        ],
-      },
-      {
-        // MODULE 7
-        title: 'Reggae',
-        number: 7,
-        lessons: [
-          'Aula 1 – Contagem dos tempos, escrita, One drop e Four drop',
-          'Aula 2 – Grooves de um compasso',
-          'Aula 3 – Grooves de dois compassos',
-          'Aula 4 - Grooves mudando a condução com notas no aro',
-          'Aula 5 – Acentuações na condução',
-          'Aula 6 – Mesclando todos os conceitos',
-          'Aula 7 – Pop/Fusion Reggae',
-          'Aula 8 - Transcrições e aplicações de músicas',
-        ],
-      },
-      {
-        // MODULE 8
-        title: 'Montando a bateria / Posicionamento',
-        number: 8,
-        lessons: [
-          'Aula 1 – Como montar a bateria',
-          'Aula 2 – Como segurar as baquetas',
-          'Aula 3 – Posição das baquetas no instrumento',
-          'Aula 4 – Como posicionar e tocar os pés',
-        ],
-      },
-      {
-        // MODULE 9
-        title: 'Tocando com o Metrônomo',
-        number: 9,
-        lessons: [
-          'Aula 1 – Exercícios de divisão rítmica e aplicando divisões rítmicas como viradas',
-          'Aula 2 – Omitindo tempos do metrônomo',
-          'Aula 3 – Interpretando o metrônomo de diferentes maneiras',
-        ],
-      },
-    ],
-    [
-      {
         // MODULE 3
         title: 'Técnica de Mãos',
         number: 3,
-        video: {
-          videoSrcURL: 'https://player.vimeo.com/video/468658100',
-          videoTitle: 'Fórmula de compasso - Compasso composto',
-        },
         submodules: [
           {
             title: 'Os 7 Rudimentos Essenciais',
@@ -284,13 +197,45 @@ const content: Content = {
           },
         ],
       },
+    ],
+    [
+      {
+        // MODULE 4
+        title: 'Técnica de Pés',
+        number: 4,
+        video: {
+          videoSrcURL: 'https://player.vimeo.com/video/413096952',
+          videoTitle: 'Grooves - Apresentação',
+        },
+        lessons: [
+          'Aula 1 – Exercício para precisão e controle 01',
+          'Aula 2 – Exercícios para precisão e controle 02 a 05',
+          'Aula 3 – Exercício para resistência e velocidade',
+          'Aula 4 – Distribuindo um toque de bumbo no Rulo Simples',
+          'Aula 5 – Combinações de caixa e bumbo com um toque',
+          'Aula 6 – Mudando a condução dos exercícios com um toque',
+          'Aula 7 – Aplicando as distribuições com pratos',
+          'Aula 8 – Aplicando as combinações em viradas',
+          'Aula 9 - Distribuindo dois toques de bumbo no Rulo Simples',
+          'Aula 10 - Combinações de caixa e bumbo com dois toques',
+          'Aula 11 - Mudando a condução dos exercícios com dois toques',
+          'Aula 12 – Aplicando as distribuições de dois toques com pratos',
+          'Aula 13 – Aplicando as combinações de dois toques em viradas',
+          'Aula 14 – Precisão e controle do toque duplo',
+          'Aula 15 – Toque duplo de bumbo rápido – Tipos de execução',
+          'Aula 16 – Toque duplo de bumbo rápido – Exercícios em fusas',
+          'Aula 17 – Toque duplo de bumbo rápido – Exercícios em fusas e sextinas',
+          'Aula 18 – Grooves com toque duplo de bumbo rápido',
+        ],
+      },
       {
         // MODULE 5
         title: 'Samba',
         number: 5,
         video: {
           videoSrcURL: 'https://player.vimeo.com/video/484043564',
-          videoTitle: 'Aula - Aplicação e distribuição dos rudimentos na baterias'
+          videoTitle:
+            'Aula - Aplicação e distribuição dos rudimentos na baterias',
         },
         image: module5Image,
         lessons: [
@@ -307,6 +252,62 @@ const content: Content = {
           'Aula 11 - Melodias de um compasso com o ostinato de 3 notas',
           'Aula 12 - Melodias de dois compassos com o ostinato de 3 notas',
           'Aula 13 - Textos com o ostinato de 3 notas',
+        ],
+      },
+      {
+        // MODULE 6
+        title: 'Grooves de Shuffle',
+        number: 6,
+        lessons: [
+          'Aula 1 – O feeling do Shuffle, divisão rítmica, escrita e aplicações',
+          'Aula 2 – Grooves dobrando bumbos',
+          'Aula 3 – Grooves dobrando caixas',
+          'Aula 4 – Grooves com bumbo no meio dos tempos',
+          'Aula 5 – Grooves com notas fantasmas 01',
+          'Aula 6 – Grooves com notas fantasmas 02',
+          'Aula 7 – O Shuffle “Trenzinho” e com condução de Jazz',
+          'Aula 8 – Half time Shuffle',
+          'Aula 9 – Transcrições e aplicações de músicas',
+        ],
+      },
+      {
+        // MODULE 7
+        title: 'Reggae',
+        number: 7,
+        video: {
+          videoSrcURL: 'https://player.vimeo.com/video/468658100',
+          videoTitle: 'Fórmula de compasso - Compasso composto',
+        },
+        lessons: [
+          'Aula 1 – Contagem dos tempos, escrita, One drop e Four drop',
+          'Aula 2 – Grooves de um compasso',
+          'Aula 3 – Grooves de dois compassos',
+          'Aula 4 - Grooves mudando a condução com notas no aro',
+          'Aula 5 – Acentuações na condução',
+          'Aula 6 – Mesclando todos os conceitos',
+          'Aula 7 – Pop/Fusion Reggae',
+          'Aula 8 - Transcrições e aplicações de músicas',
+        ],
+      },
+      {
+        // MODULE 8
+        title: 'Montando a bateria / Posicionamento',
+        number: 8,
+        lessons: [
+          'Aula 1 – Como montar a bateria',
+          'Aula 2 – Como segurar as baquetas',
+          'Aula 3 – Posição das baquetas no instrumento',
+          'Aula 4 – Como posicionar e tocar os pés',
+        ],
+      },
+      {
+        // MODULE 9
+        title: 'Tocando com o Metrônomo',
+        number: 9,
+        lessons: [
+          'Aula 1 – Exercícios de divisão rítmica e aplicando divisões rítmicas como viradas',
+          'Aula 2 – Omitindo tempos do metrônomo',
+          'Aula 3 – Interpretando o metrônomo de diferentes maneiras',
         ],
       },
     ],

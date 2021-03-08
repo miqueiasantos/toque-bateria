@@ -1,18 +1,19 @@
 import styled from 'styled-components'
 
 import { COLORS } from '~/styles/variables'
-import { CenterContainer, FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 export const Container = styled.div`
   position: relative;
   min-height: 900px;
 `
 
-export const ModulesContainer = styled(CenterContainer)`
+export const ModulesContainer = styled(Grid.FlexContainer)`
+  position: relative;
   z-index: 2;
 `
 
-export const ModulesContentContainer = styled(FlexContainer)`
+export const ModulesContentContainer = styled(Grid.FlexRow)`
   max-width: 754px;
 `
 
@@ -56,7 +57,7 @@ export const BackgroundFilter = styled.div`
   z-index: 2;
 `
 
-export const BackgroundImageContainer = styled(CenterContainer)`
+export const BackgroundImageContainer = styled(Grid.FlexContainer)`
   text-align: right;
   z-index: 1;
 `

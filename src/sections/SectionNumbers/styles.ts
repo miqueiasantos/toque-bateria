@@ -2,20 +2,23 @@ import styled from 'styled-components'
 
 import { COLORS } from '~/styles/variables'
 
-import { CenterContainer, FlexContainer } from '~/components/Grid'
-
-export const Container = styled(CenterContainer)`
-  position: relative;
-  z-index: 2;
-  height: 100%;
-`
+import * as Grid from '~/components/Grid'
 
 export const SectionContainer = styled.div`
   position: relative;
-  height: 300px;
   overflow: hidden;
   text-align: center;
   z-index: 1;
+
+  @media screen and (min-width: 992px) {
+    height: 300px;
+  }
+`
+
+export const Container = styled(Grid.FlexContainer)`
+  position: relative;
+  z-index: 2;
+  height: 100%;
 `
 
 export const BackgroundContainer = styled.div`
@@ -43,10 +46,10 @@ export const BackgroundImage = styled.img`
   top: -400px;
   z-index: 1;
 `
-export const CounterContainer = styled(FlexContainer)`
+export const CounterContainer = styled(Grid.FlexRow)`
   height: 100%;
 `
-export const Counter = styled(FlexContainer)`
+export const Counter = styled(Grid.FlexColumn)`
   color: ${COLORS.white};
 `
 

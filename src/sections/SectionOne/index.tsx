@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 
 import Badge from '~/components/Badge'
 import Card from '~/components/Card'
@@ -15,27 +15,26 @@ import { Container } from './styles'
 
 const SectionOne: React.FC = () => {
   return (
-    <Container>
+    <>
       <SectionTitle center>{content.title}</SectionTitle>
-
-      <FlexContainer gap="20px">
+      <Grid.FlexRow marginBottom="larger">
         {content.cards.map(item => {
           return (
-            <FlexContainer column={4} key={item.title.trim()}>
+            <Grid.FlexColumn md={6} lg={3} key={item.title.trim()} marginBottom="normal">
               <Card shadow>
-                <FlexContainer alignItems="center" flexDirection="column">
+                <Grid.Flex alignItems="center" flexDirection="column">
                   <Badge>
                     <Icon {...item.icon} />
                   </Badge>
                   <CardTitle>{item.title}</CardTitle>
                   <CardContent>{item.content}</CardContent>
-                </FlexContainer>
+                </Grid.Flex>
               </Card>
-            </FlexContainer>
+            </Grid.FlexColumn>
           )
         })}
-      </FlexContainer>
-    </Container>
+      </Grid.FlexRow>
+    </>
   )
 }
 

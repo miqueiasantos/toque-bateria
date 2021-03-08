@@ -1,5 +1,8 @@
 import React from 'react'
 
+import * as Grid from '~/components/Grid'
+import Icon from '~/components/Icon'
+
 import {
   Container,
   Title,
@@ -9,7 +12,6 @@ import {
 } from './styles'
 
 import content from './content'
-import Icon from '~/components/Icon'
 
 const ContentBanner: React.FC = () => {
   return (

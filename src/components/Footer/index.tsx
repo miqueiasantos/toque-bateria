@@ -1,40 +1,46 @@
 import React from 'react'
 
-import { CenterContainer, FlexContainer } from '~/components/Grid'
+import * as Grid from '~/components/Grid'
 import Logo from '~/components/Logo'
 import Navbar from '~/components/Navbar'
 import Icon from '~/components/Icon'
 
-import { Container, Copyright, SocialButton } from './styles'
+import {
+  Container,
+  Copyright,
+  SocialButtonContainer,
+  SocialButton,
+} from './styles'
 
 import content from './content'
 
 const Footer: React.FC = () => {
   return (
     <Container>
-      <CenterContainer paddingVertical="large">
-        <FlexContainer justifyContent="space-between" alignItems="flex-end">
-          <FlexContainer>
+      <Grid.FlexContainer paddingVertical="large" fluid="lg">
+        <Grid.FlexRow justifyContent="space-between" alignItems="flex-end">
+          <Grid.FlexColumn md={4}>
             <Logo type="footer" />
-          </FlexContainer>
-          <FlexContainer flexDirection="column" justifyContent="space-between">
+          </Grid.FlexColumn>
+          <Grid.FlexColumn
+            flexDirection="column"
+            justifyContent="space-between"
+            alignItems="flex-end"
+            md={8}
+          >
             <Navbar theme="dark" />
-            <FlexContainer
-              gap="20px"
-              justifyContent="flex-end"
-              paddingTop="large"
-              paddingBottom="normal"
-            >
+
+            <SocialButtonContainer>
               {content.socialMedias.map(socialMedia => (
                 <SocialButton key={socialMedia.url} href={socialMedia.url}>
                   <Icon size="40px" {...socialMedia.icon} />
                 </SocialButton>
               ))}
-            </FlexContainer>
-          </FlexContainer>
-        </FlexContainer>
+            </SocialButtonContainer>
+          </Grid.FlexColumn>
+        </Grid.FlexRow>
         <Copyright>{content.copyright}</Copyright>
-      </CenterContainer>
+      </Grid.FlexContainer>
     </Container>
   )
 }

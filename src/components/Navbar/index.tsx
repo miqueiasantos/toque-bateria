@@ -1,5 +1,4 @@
 import React from 'react'
-import { SIZES } from '~/styles/variables'
 
 import { Container, MenuList, MenuItem, MenuButton } from './styles'
 
@@ -11,21 +10,19 @@ export interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
   return (
-    <Container as="nav" flexGrow={1} justifyContent="flex-end">
-      <MenuList as="ul" gap={SIZES.large}>
-        {content.map(item => (
-          <MenuItem key={item.link}>
-            <MenuButton
-              theme={theme}
-              to={`/${item.link}`}
-              activeClassName="active"
-            >
-              {item.text}
-            </MenuButton>
-          </MenuItem>
-        ))}
-      </MenuList>
-    </Container>
+    <MenuList className="row" as="ul" justifyContent="center">
+      {content.map(item => (
+        <MenuItem key={item.link} className="col-auto">
+          <MenuButton
+            theme={theme}
+            to={`/${item.link}`}
+            activeClassName="active"
+          >
+            {item.text}
+          </MenuButton>
+        </MenuItem>
+      ))}
+    </MenuList>
   )
 }
 
