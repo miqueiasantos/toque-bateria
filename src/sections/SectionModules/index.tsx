@@ -36,7 +36,11 @@ const SectionModules: React.FC = () => {
 
           <Grid.FlexRow>
             {content.modules.map((column, index) => (
-              <Grid.FlexColumn key={column[index].title.trim()} md={6}>
+              <Grid.FlexColumn
+                key={column[index].title.trim()}
+                md={6}
+                flexDirection="column"
+              >
                 {column.map(module => (
                   <Grid.FlexRow
                     key={module.title.trim()}
