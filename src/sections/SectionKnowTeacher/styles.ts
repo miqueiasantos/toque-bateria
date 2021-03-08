@@ -17,10 +17,6 @@ export const Avatar = styled.img`
   max-width: 272px;
 `
 
-export const CallToAction = styled(Link)`
+export const CallToActionContainer = styled.div`
   margin-top: ${SIZES.large};
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  color: ${COLORS.white};
 `

@@ -8,6 +8,7 @@
     "@fontsource/dm-sans": "^4.2.2",
     "@styled-icons/entypo-social": "^10.18.0",
     "@styled-icons/evaicons-outline": "^10.18.0",
+    "@styled-icons/feather": "^10.18.0",
     "@styled-icons/ionicons-solid": "^10.28.0",
     "@styled-icons/material": "^10.28.0",
     "axios": "^0.21.1",

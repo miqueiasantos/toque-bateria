@@ -17,8 +17,8 @@ const content: Content = {
   avatar: avatar,
   callToActionWithIcon: {
     icon: {
-      name: 'YoutubeWithCircle',
-      pack: 'entypo-social',
+      name: 'Youtube',
+      pack: 'feather',
     },
     text: 'Ver canal no Youtube',
   },
