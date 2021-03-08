@@ -12,4 +12,18 @@ export const Container = styled.div<CardImageProps>`
   background-repeat: no-repeat;
   background-position: center;
   background-image: ${props => `url(${props.image})`};
+  z-index: 1;
+`
+
+export const PlayContainer = styled.div`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 `

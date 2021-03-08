@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-import { Container } from './styles'
+import { Container, PlayContainer } from './styles'
+import Icon from '~/components/Icon'
 
 export interface CardImageProps {
   image?: string
@@ -33,7 +34,13 @@ const CardImage: React.FC<CardImageProps> = ({ image, videoThumb }) => {
     videoThumb && loadThumb(image)
   }, [])
 
-  return <Container image={thumb} />
+  return (
+    <Container image={thumb}>
+      <PlayContainer>
+        <Icon name="PlayCircleOutline" size="32" />
+      </PlayContainer>
+    </Container>
+  )
 }
 
 export default CardImage
