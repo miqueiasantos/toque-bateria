@@ -13,7 +13,7 @@ export const Container = styled(Link)`
     props.color === 'primary' ? COLORS.secondaryAccent : COLORS.secondary};
   align-items: center;
   display: inline-flex;
-  font-weight: 500;
+  font-weight: 700;
 
   &:hover {
     opacity: 0.7;
