@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
+import FabZap from '~/components/FabZap'
 
 import GlobalStyle from '~/styles/GlobalStyle'
 import { Container } from './styles'
@@ -27,6 +28,8 @@ const Layout: React.FC = ({ children }) => {
       <Container>{children}</Container>
 
       <Footer />
+
+      <FabZap />
     </>
   )
 }
