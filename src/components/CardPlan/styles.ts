@@ -45,8 +45,8 @@ export const Description = styled.p`
 
 export const Feature = styled.p<FeatureProps>`
   margin: 0 0 ${SIZES.small};
-  color: ${props => (props.active ? '#689A9A' : '#8A8A8A')};
-
+  color: ${props => (props.active ? '#689A9A' : `${COLORS.secondaryAccent}`)};
+  font-weight: 700;
   &:last-of-type {
     margin-bottom: ${SIZES.large};
   }
