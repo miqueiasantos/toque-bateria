@@ -39,7 +39,9 @@ export const FullDescription = styled.p`
 
 export const CenterContainer = styled(Grid.FlexContainer)`
   height: 100%;
-  background-image: url(${heroBackground});
-  background-position: bottom right;
-  background-repeat: no-repeat;
+  @media screen and (min-width: 1200px) {
+    background-image: url(${heroBackground});
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
 `

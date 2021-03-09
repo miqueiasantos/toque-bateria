@@ -21,7 +21,7 @@ const HeroBanner: React.FC = () => {
 
   return (
     <Container>
-      <CenterContainer paddingTop="larger">
+      <CenterContainer paddingTop="larger" fluid="lg">
         <TextContainer>
           <Title>
             {firstTitleWord}{' '}
