@@ -11,7 +11,7 @@ import content from './content'
 
 const SectionKnowTeacher: React.FC = () => {
   return (
-    <Container>
+    <Container id="teacher">
       <Grid.FlexContainer paddingVertical="larger" fluid="lg">
         <Grid.FlexRow alignItems="center">
           <Grid.FlexColumn
@@ -23,7 +23,8 @@ const SectionKnowTeacher: React.FC = () => {
             <Avatar src={content.avatar} />
             <CallToActionContainer>
               <Button color="primary">
-                <Icon {...content.callToActionWithIcon.icon} />&nbsp;&nbsp;{content.callToActionWithIcon.text}
+                <Icon {...content.callToActionWithIcon.icon} />
+                &nbsp;&nbsp;{content.callToActionWithIcon.text}
               </Button>
             </CallToActionContainer>
           </Grid.FlexColumn>

@@ -1,6 +1,6 @@
 import React from 'react'
-
-import { Container, MenuList, MenuItem, MenuButton } from './styles'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
+import { MenuList, MenuItem, MenuButton } from './styles'
 
 import content from './content'
 
@@ -16,7 +16,8 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
           <MenuButton
             theme={theme}
             to={`/${item.link}`}
-            activeClassName="active"
+            as={item.anchor && AnchorLink}
+            {...(!item.anchor ? { activeClassName: 'active' } : {})}
           >
             {item.text}
           </MenuButton>

@@ -16,7 +16,7 @@ import content from './content'
 
 const SectionPlans: React.FC = () => {
   return (
-    <Grid.FlexContainer paddingVertical="larger">
+    <Grid.FlexContainer paddingVertical="larger" id="plans">
       <SectionTitle center>{content.title}</SectionTitle>
 
       <Grid.FlexRow paddingBottom="larger">

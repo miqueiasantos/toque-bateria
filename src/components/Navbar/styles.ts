@@ -2,13 +2,11 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import * as Grid from '~/components/Grid'
-import { COLORS, SIZES } from '~/styles/variables'
+import { COLORS } from '~/styles/variables'
 
 import { NavbarProps } from '.'
 
 interface MenuButtonProps extends NavbarProps {}
-
-export const Container = styled(Grid.FlexContainer)``
 
 export const MenuList = styled(Grid.FlexRow)`
   margin: 0;

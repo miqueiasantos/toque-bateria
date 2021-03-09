@@ -1,14 +1,15 @@
 interface MenuItem {
   text: string
   link: string
+  anchor?: boolean
 }
 
 const content: MenuItem[] = [
-  { text: 'Home', link: '#home' },
+  { text: 'Home', link: '' },
   { text: 'Conteúdo', link: 'content' },
-  { text: 'O Professor', link: '#teacher' },
-  { text: 'Planos', link: '#plans' },
-  { text: 'Área do Aluno', link: '#student' },
+  { text: 'O Professor', link: '#teacher', anchor: true },
+  { text: 'Planos', link: '#plans', anchor: true },
+  { text: 'Área do Aluno', link: '#external' },
 ]
 
 export default content
