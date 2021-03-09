@@ -2,7 +2,7 @@ import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import * as Grid from '~/components/Grid'
-import { COLORS } from '~/styles/variables'
+import { COLORS, SIZES } from '~/styles/variables'
 
 import { NavbarProps } from '.'
 
@@ -12,9 +12,16 @@ export const MenuList = styled(Grid.FlexRow)`
   margin: 0;
   padding: 0;
   list-style: none;
+  @media screen and (max-width: 768px) {
+    margin-top: ${SIZES.normal};
+  }
 `
 
-export const MenuItem = styled.li``
+export const MenuItem = styled.li`
+  @media screen and (max-width: 768px) {
+    margin-bottom: ${SIZES.normal};
+  }
+`
 
 export const MenuButton = styled(Link)<MenuButtonProps>`
   color: ${props =>

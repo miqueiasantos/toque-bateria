@@ -24,7 +24,6 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
           md="auto"
           sm={12}
           justifyContent="center"
-          marginVertical="normal"
         >
           <Navbar />
         </Grid.FlexColumn>
