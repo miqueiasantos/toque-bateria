@@ -20,16 +20,14 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
           </Link>
         </Grid.FlexColumn>
 
-        <Grid.FlexColumn
-          md="auto"
-          sm={12}
-          justifyContent="center"
-        >
+        <Grid.FlexColumn md="auto" sm={12} justifyContent="center">
           <Navbar />
         </Grid.FlexColumn>
 
         <Grid.FlexColumn md="auto" sm={12} justifyContent="center">
-          <Button>Matricule-se</Button>
+          <Button to="#plans" anchor>
+            Matricule-se
+          </Button>
         </Grid.FlexColumn>
       </Grid.FlexRow>
     </Grid.FlexContainer>

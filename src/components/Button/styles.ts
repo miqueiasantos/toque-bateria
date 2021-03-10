@@ -1,9 +1,11 @@
-import { Link } from 'gatsby'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 import styled from 'styled-components'
 
 import { COLORS, RADIUS, SIZES } from '~/styles/variables'
 
-export const Container = styled(Link)`
+import { ButtonProps } from '.'
+
+export const Container = styled(AnchorLink)<ButtonProps>`
   height: 48px;
   padding: 0 ${SIZES.normal};
   border-radius: ${RADIUS.small};

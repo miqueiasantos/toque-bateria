@@ -17,6 +17,9 @@ export const Copyright = styled.p`
 
 export const SocialButtonContainer = styled.div`
   margin-top: ${SIZES.large};
+  @media screen and (min-width: 768px) {
+    align-self: flex-end;
+  }
   /* text-align: right; */
 `
 

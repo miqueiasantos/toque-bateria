@@ -1,20 +1,21 @@
 import React from 'react'
+import { AnchorLink } from 'gatsby-plugin-anchor-links'
 
 import { Container } from './styles'
 
-interface ButtonProps {
-  url?: string
+export interface ButtonProps {
+  to?: string
   color?: 'primary' | 'secondary'
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
-  url = '/',
+  to = '/#plans',
   color = 'primary',
 }) => {
   return (
-    <Container to={url} color={color}>
-      <span>{children}</span>
+    <Container to={to} color={color}>
+      {children}
     </Container>
   )
 }

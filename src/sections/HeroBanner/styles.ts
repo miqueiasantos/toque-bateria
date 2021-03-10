@@ -27,7 +27,7 @@ export const ShortDescription = styled.h2`
   margin: 0 0 30px;
   max-width: 560px;
   font-size: 2.125em;
-  font-weight: 400;
+  font-weight: 700;
   color: ${COLORS.white};
 `
 export const FullDescription = styled.p`

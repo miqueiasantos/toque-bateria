@@ -50,7 +50,7 @@ const CardPlan: React.FC<CardPlanProps> = ({
           </Feature>
         ))}
 
-        <Button>{callToAction}</Button>
+        <Button to={callToAction}>Matricule-se</Button>
       </Container>
     </Card>
   )

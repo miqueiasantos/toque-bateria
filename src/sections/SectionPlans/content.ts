@@ -1,5 +1,4 @@
-import { title } from 'process'
-import { ContentBase, PlanFeatures, Plan } from '~/types'
+import { ContentBase, Plan } from '~/types'
 
 interface Content extends ContentBase {
   plans: Plan[]
@@ -32,7 +31,7 @@ const content: Content = {
           active: false,
         },
       ],
-      callToAction: 'Matricule-se',
+      callToAction: 'https://sun.eduzz.com/667851',
     },
     {
       type: 'ANUAL',
@@ -53,7 +52,7 @@ const content: Content = {
           active: true,
         },
       ],
-      callToAction: 'Matricule-se',
+      callToAction: 'https://sun.eduzz.com/640493',
     },
     {
       type: 'VITALÍCIO',
@@ -74,7 +73,7 @@ const content: Content = {
           active: true,
         },
       ],
-      callToAction: 'Matricule-se',
+      callToAction: 'https://sun.eduzz.com/667855',
     },
   ],
   warranty: {

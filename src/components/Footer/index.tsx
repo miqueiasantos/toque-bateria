@@ -19,14 +19,15 @@ const Footer: React.FC = () => {
     <Container>
       <Grid.FlexContainer paddingVertical="large" fluid="lg">
         <Grid.FlexRow justifyContent="space-between" alignItems="flex-end">
-          <Grid.FlexColumn md={4}>
+          <Grid.FlexColumn xs={12} md={4}>
             <Logo type="footer" />
           </Grid.FlexColumn>
           <Grid.FlexColumn
             flexDirection="column"
             justifyContent="space-between"
-            alignItems="flex-end"
-            md={8}
+            alignItems="center"
+            md="auto"
+            xs={12}
           >
             <Navbar theme="dark" />
 

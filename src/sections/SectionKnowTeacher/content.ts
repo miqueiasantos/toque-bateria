@@ -7,6 +7,7 @@ interface Content extends ContentBase {
   callToActionWithIcon: {
     icon: IconBase
     text: string
+    url: string
   }
 }
 
@@ -21,6 +22,7 @@ const content: Content = {
       pack: 'feather',
     },
     text: 'Ver canal no Youtube',
+    url: 'https://www.youtube.com/user/vitorlambert',
   },
 }
 

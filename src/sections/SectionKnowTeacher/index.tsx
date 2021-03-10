@@ -22,7 +22,7 @@ const SectionKnowTeacher: React.FC = () => {
           >
             <Avatar src={content.avatar} />
             <CallToActionContainer>
-              <Button color="primary">
+              <Button color="primary" to={content.callToActionWithIcon.url}>
                 <Icon {...content.callToActionWithIcon.icon} />
                 &nbsp;&nbsp;{content.callToActionWithIcon.text}
               </Button>
