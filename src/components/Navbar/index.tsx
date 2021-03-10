@@ -15,7 +15,7 @@ const Navbar: React.FC<NavbarProps> = ({ theme = 'light' }) => {
         <MenuItem key={item.link} className="col-auto">
           <MenuButton
             theme={theme}
-            to={`/${item.link}`}
+            to={item.link}
             as={item.anchor && AnchorLink}
             {...(!item.anchor ? { activeClassName: 'active' } : {})}
           >
