@@ -35,7 +35,7 @@ const SectionPlans: React.FC = () => {
       <Grid.FlexContainer fluid>
         <Grid.FlexRow justifyContent="center">
           <WarrantyContainer alignItems="center">
-            <Grid.FlexColumn xs={2}>
+            <Grid.FlexColumn md={2}>
               <WarrantyBadge
                 flexDirection="column"
                 justifyContent="center"
@@ -46,7 +46,7 @@ const SectionPlans: React.FC = () => {
               </WarrantyBadge>
             </Grid.FlexColumn>
 
-            <Grid.FlexColumn xs={10} flexDirection="column">
+            <Grid.FlexColumn md={10} flexDirection="column">
               <WarrantyShortDescription>
                 {content.warranty.shortDescription}
               </WarrantyShortDescription>
