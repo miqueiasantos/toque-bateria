@@ -24,8 +24,7 @@ const content: Content = {
     },
     {
       video: {
-        // TODO: update this video
-        videoSrcURL: 'https://player.vimeo.com/video/340478854',
+        videoSrcURL: 'https://player.vimeo.com/video/469490169',
         videoTitle: 'A virada mais famosa do mundo!',
       },
       title: 'Tocando Músicas',
