@@ -6,7 +6,7 @@ interface Content extends ContentBase {
 
 const content: Content = {
   video: {
-    videoSrcURL: 'https://player.vimeo.com/video/470025275',
+    videoSrcURL: 'https://player.vimeo.com/video/500611982',
     videoTitle: 'Viradas com acentuações 01',
   },
   title: 'O único curso com o recurso Estude Junto!',
