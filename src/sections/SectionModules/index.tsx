@@ -62,7 +62,9 @@ const SectionModules: React.FC = () => {
           </Grid.FlexRow>
 
           <Grid.Flex justifyContent="center">
-            <Button color="secondary">{content.callToAction}</Button>
+            <Button to="/content" color="secondary">
+              {content.callToAction}
+            </Button>
           </Grid.Flex>
         </ModulesContentContainer>
       </ModulesContainer>
