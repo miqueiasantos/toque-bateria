@@ -18,11 +18,11 @@ const content: Content = {
   avatar: avatar,
   callToActionWithIcon: {
     icon: {
-      name: 'Youtube',
-      pack: 'feather',
+      name: 'Instagram',
+      pack: 'entypo-social',
     },
-    text: 'Ver canal no Youtube',
-    url: 'https://www.youtube.com/user/vitorlambert',
+    text: 'Ver Perfil no Instagram',
+    url: 'https://www.instagram.com/vitorlambertmusic/',
   },
 }
 
