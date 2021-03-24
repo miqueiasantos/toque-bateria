@@ -18,6 +18,9 @@ const GlobalStyle = createGlobalStyle`
     font-size: 16px;
     line-height: 1.3;
     letter-spacing: 1px;
+    @media screen and (min-width: 768px) {
+      padding-top: 110px;
+    }
   }
 
   a {
