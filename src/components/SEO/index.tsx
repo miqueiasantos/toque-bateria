@@ -63,8 +63,11 @@ const SEO: React.FC<SEOProps> = ({ description, lang = "pt-br", title }) => {
           content: title,
         },
         {
-          name: `twitter:description`,
-          content: metaDescription,
+            name: `twitter:description`,
+            content: metaDescription,
+        },{
+        name: `facebook-domain-verification`,
+        content: `gjkqk6153m3ruglb6meq4flieqkzwl`,
         },
       ]}
     />
