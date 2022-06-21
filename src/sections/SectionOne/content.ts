@@ -18,8 +18,10 @@ const content: Content = {
     },
     {
       title: 'Veja e Reveja',
+      //   content:
+      //     'Estude na hora que quiser com mais de 750 vídeos com partitura na tela e PDF. São mais de 1.000 exercícios em mais de 40 horas de conteúdo.',
       content:
-        'Estude na hora que quiser com mais de 750 vídeos com partitura na tela e PDF. São mais de 1.000 exercícios em mais de 40 horas de conteúdo.',
+        'Estude na hora que quiser com mais de 750 vídeos com partitura na tela e PDF. São mais de  40 horas de conteúdo e toda semana tem aula nova no ar!',
       icon: {
         name: 'PlayCircle',
         pack: 'material',

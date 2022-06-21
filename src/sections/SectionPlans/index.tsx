@@ -19,7 +19,7 @@ const SectionPlans: React.FC = () => {
     <Grid.FlexContainer paddingVertical="larger" id="plans">
       <SectionTitle center>{content.title}</SectionTitle>
 
-      <Grid.FlexRow paddingBottom="larger">
+      <Grid.FlexRow paddingBottom="larger" justifyContent="center">
         {content.plans.map(plan => (
           <Grid.FlexColumn
             key={plan.type}

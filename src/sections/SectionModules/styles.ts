@@ -8,6 +8,18 @@ export const Container = styled.div`
   min-height: 900px;
 `
 
+export const CardContainer = styled(Grid.FlexColumn)`
+  cursor: pointer;
+`
+export const CardTitle2 = styled.h4`
+  font-size: 1.125em;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+`
+
 export const ModulesContainer = styled(Grid.FlexContainer)`
   position: relative;
   z-index: 2;
@@ -26,7 +38,7 @@ export const ModuleNumber = styled.h2`
 export const ModuleTitle = styled.h3`
   margin: 0;
   font-size: 1.125em;
-  font-weight: 400;
+  font-weight: 500;
   color: ${COLORS.white};
 `
 
@@ -66,4 +78,10 @@ export const BackgroundImage = styled.img`
   position: relative;
   top: 0;
   z-index: 1;
+`
+
+export const DescriptionInfo = styled.p`
+  font-size: 13px;
+  margin: 8px 0 0 0;
+  font-weight: normal;
 `

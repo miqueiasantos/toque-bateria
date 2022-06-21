@@ -42,7 +42,9 @@ export interface CardBase {
 
 export interface VideoBase {
   videoSrcURL: string
-  videoTitle: string
+  videoTitle: string,
+  callToAction?: string,
+  callToActionText?: string
 }
 
 export interface ContentBase {
@@ -54,6 +56,7 @@ export interface ContentBase {
   video?: VideoBase
   videos?: VideoBase[]
   cards?: CardBase[]
+  cards?: Count[] 
 }
 
 export interface SectionTitleBaseProps {
@@ -71,6 +74,7 @@ export interface PlanFeatures {
 export interface Plan {
   type: string
   fullPrice: number
+  fullPrice: string
   installmentsPrice: number
   description: string
   features: PlanFeatures[]
@@ -81,6 +85,7 @@ export type LessonBase = string
 export interface SubmoduleBase {
   title: string
   lessons: LessonBase[]
+  description?: string
 }
 
 export interface ModuleBase {
@@ -91,3 +96,11 @@ export interface ModuleBase {
   image?: string
   video?: VideoBase
 }
+
+
+export interface Count {
+    number: number
+    numberSuffix?: string
+    description: string
+  }
+  
