@@ -26,7 +26,7 @@ const content: Content = {
         installmentsPrice: 0,
         description: 'Consulte pelo WhatsApp os valores de plano anual e vitalício',
         features: [],
-        callToAction: 'https://api.whatsapp.com/send?phone=5511984829838&text=Ol%C3%A1!',
+        callToAction: 'https://api.whatsapp.com/send?phone=5511984829838&text=Ol%C3%A1%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20o%20Toque%20Bateria!',
       },
     // {
     //   type: 'TRIMESTRAL',
