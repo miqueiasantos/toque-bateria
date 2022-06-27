@@ -27,6 +27,7 @@ export const ModulesContainer = styled(Grid.FlexContainer)`
 
 export const ModulesContentContainer = styled(Grid.FlexRow)`
   max-width: 754px;
+  margin: 0;
 `
 
 export const ModuleNumber = styled.h2`
@@ -65,8 +66,10 @@ export const BackgroundFilter = styled.div`
     #689a9a 45%,
     rgba(91, 136, 136, 0.01) 100%
   );
-
   z-index: 2;
+  @media screen and (max-width: 768px) {
+    background:  #689a9a;
+  }
 `
 
 export const BackgroundImageContainer = styled(Grid.FlexContainer)`

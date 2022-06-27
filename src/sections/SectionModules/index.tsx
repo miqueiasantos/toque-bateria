@@ -98,7 +98,8 @@ const handleCloseModal = () => {
               <CardContainer
                 key={item.title.trim()}
                 lg={4}
-                md={6}
+                md={4}
+                sm={12}
                 marginBottom="normal"
                 onClick={() => handleOpenModal(item.video)}
               > 

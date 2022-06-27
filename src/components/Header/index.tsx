@@ -27,9 +27,9 @@ const Header: React.FC<HeaderProps> = ({ siteTitle }) => {
             <Navbar />
           </Grid.FlexColumn>
 
-          <Grid.FlexColumn md="auto" sm={12} justifyContent="center">
+          {/* <Grid.FlexColumn md="auto" sm={12} justifyContent="center">
             <Button>Matricule-se</Button>
-          </Grid.FlexColumn>
+          </Grid.FlexColumn> */}
         </Grid.FlexRow>
       </Grid.FlexContainer>
     </Container>

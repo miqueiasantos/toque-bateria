@@ -12,6 +12,7 @@ export const Container = styled.div<CardProps>`
   border-radius: ${RADIUS.normal};
   overflow: hidden;
   transition: all 0.3s;
+  flex-grow: 1; 
 
   ${props => props.withImage && 'padding-top: 56.25%;'};
   ${props => props.fullSize && 'width: 100%;'};

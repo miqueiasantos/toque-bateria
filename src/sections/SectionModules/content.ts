@@ -63,26 +63,26 @@ const content: Content = {
   cards: [
     {
       video: {
-        videoSrcURL: 'https://player.vimeo.com/video/340478854',
-        videoTitle: 'Fórmula de compasso - Compasso composto',
+        videoSrcURL: 'https://player.vimeo.com/video/724236210',
+        videoTitle: 'Música - Supersonic',
       },
-      title: 'Teoria, Leitura e Escrita',
+      title: 'Música - Supersonic',
       content: '',
     },
     {
       video: {
-        videoSrcURL: 'https://player.vimeo.com/video/469490169',
-        videoTitle: 'A virada mais famosa do mundo!',
+        videoSrcURL: 'https://player.vimeo.com/video/413096952',
+        videoTitle: 'Grooves',
       },
-      title: 'Tocando Músicas',
+      title: 'Grooves',
       content: '',
     },
     {
       video: {
-        videoSrcURL: 'https://player.vimeo.com/video/481208373',
-        videoTitle: 'Por que estudar outro instrumento?',
+        videoSrcURL: 'https://player.vimeo.com/video/484043564',
+        videoTitle: 'Aplicação de Rudimentos',
       },
-      title: 'Instrumento Complementar',
+      title: 'Aplicação de Rudimentos',
       content: '',
     }
   ],

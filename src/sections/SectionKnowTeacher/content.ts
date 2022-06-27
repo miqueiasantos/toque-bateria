@@ -22,7 +22,7 @@ const content: Content = {
       pack: 'entypo-social',
     },
     text: 'Ver Perfil no Instagram',
-    url: 'https://www.instagram.com/vitorlambertmusic/',
+    url: 'https://www.instagram.com/_vitor_lambert/',
   },
 }
 
