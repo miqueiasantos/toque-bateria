@@ -30,12 +30,14 @@ const CardPlan: React.FC<CardPlanProps> = ({
     <Card shadow>
       <Container flexDirection="column" alignItems="center">
         <Type>{type}</Type>
-        <FullPrice>
-          R$ {fullPrice} <FullPriceLabel>à vista</FullPriceLabel>
-        </FullPrice>
-        <InstallmentsPrice>
+        {fullPrice && 
+            <FullPrice>
+              R$ {fullPrice} <FullPriceLabel>mês</FullPriceLabel>
+            </FullPrice>
+        }
+        {/* <InstallmentsPrice>
           ou 12 parcelas de R$ {installmentsPrice.toFixed(2).replace('.', ',')}
-        </InstallmentsPrice>
+        </InstallmentsPrice> */}
         <Description>{description}</Description>
         {features.map(feature => (
           <Feature key={feature.title.trim()} active={feature.active}>
@@ -50,7 +52,7 @@ const CardPlan: React.FC<CardPlanProps> = ({
           </Feature>
         ))}
 
-        <Button to={callToAction}>Matricule-se</Button>
+        <Button to={callToAction} color={fullPrice ? 'primary' : 'secondary'}>{fullPrice ? 'Matricule-se' : 'Fale Conosco'}</Button>
       </Container>
     </Card>
   )

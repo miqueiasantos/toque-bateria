@@ -15,18 +15,21 @@ import {
   Counter,
   CounterNumber,
   CounterDescription,
+  SectionTitleFull
 } from './styles'
 
 import backgroundImage from '~/images/numbers-background/numbers-background.png'
 
 import content from './content'
+import SectionTitle from '~/components/SectionTitle'
 
 const SectionNumbers: React.FC = () => {
   return (
     <SectionContainer>
       <Container>
+        <SectionTitleFull>{content.title}</SectionTitleFull>
         <CounterContainer alignItems="center">
-          {content.map(counter => (
+          {content.cards.map(counter => (
             <Counter
               key={String(counter.number)}
               lg={3}

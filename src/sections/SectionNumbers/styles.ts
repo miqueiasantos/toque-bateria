@@ -15,6 +15,16 @@ export const SectionContainer = styled.div`
   }
 `
 
+export const SectionTitleFull = styled.h2`
+  margin: 50px 0 20px 0;
+  font-size: 2.125em;
+  font-weight: 700;
+  color: #FFFFFF;
+  @media(max-width: 1199px){
+    font-size: 2em;
+  }
+`
+
 export const Container = styled(Grid.FlexContainer)`
   position: relative;
   z-index: 2;
@@ -47,7 +57,6 @@ export const BackgroundImage = styled.img`
   z-index: 1;
 `
 export const CounterContainer = styled(Grid.FlexRow)`
-  height: 100%;
 `
 export const Counter = styled(Grid.FlexColumn)`
   color: ${COLORS.white};
@@ -56,6 +65,9 @@ export const Counter = styled(Grid.FlexColumn)`
 const CounterText = styled.h2`
   margin: 0;
   font-size: 2.125em;
+  @media(max-width: 1199px){
+      font-size: 1.9em;
+  }
 `
 
 export const CounterNumber = styled(CounterText)``

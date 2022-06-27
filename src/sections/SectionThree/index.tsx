@@ -20,7 +20,7 @@ const SectionThree: React.FC = () => {
         <Highlight search={content.titleHighlight}>{content.title}</Highlight>
       </SectionTitle>
 
-      <FullContent>{content.fullContent}</FullContent>
+      <FullContent dangerouslySetInnerHTML={{ __html: content.fullContent }} />
 
       <Button>{content.callToAction}</Button>
     </Grid.FlexRow>
