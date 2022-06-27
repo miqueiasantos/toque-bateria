@@ -41,7 +41,7 @@ const Home = () => (
     <Grid.FlexContainer paddingVertical="larger">
       <SectionBonus />
     </Grid.FlexContainer>
-
+ 
     <SectionKnowTeacher />
     <SectionPlans />
   </Layout>
