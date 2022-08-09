@@ -7,7 +7,11 @@ import heroBackground from '~/images/hero-banner.png'
 
 export const Container = styled.div`
   background-color: ${COLORS.primary};
-  height: 600px;
+  padding: 100px 0;
+  margin-bottom: 100px;
+  @media screen and (max-width: 480px) {
+    padding: 66px 0;
+  }
 `
 
 export const TextContainer = styled.div``
@@ -16,6 +20,7 @@ export const Title = styled.h1`
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 3.25em;
+  display:none;
   color: ${COLORS.textAccent};
 `
 
@@ -24,14 +29,23 @@ export const TitleHightlight = styled.span`
 `
 
 export const ShortDescription = styled.h2`
-  margin: 0 0 30px;
-  max-width: 560px;
+  margin: 0 auto 20px auto;
+  max-width: 790px;
   font-size: 2.125em;
   font-weight: 700;
+  text-align: center;
   color: ${COLORS.white};
+  @media screen and (max-width: 480px) {
+    font-size: 1.7em;
+  }
+`
+export const ShortDescription2 = styled.span`
+  text-transform: uppercase;
+  font-weight: bold;
+  color: ${COLORS.secondary};
 `
 export const FullDescription = styled.p`
-  max-width: 425px;
+  text-align: center;
   font-size: 1.25em;
   font-weight: 300;
   color: ${COLORS.white};

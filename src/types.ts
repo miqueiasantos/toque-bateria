@@ -51,12 +51,14 @@ export interface ContentBase {
   title: string
   subtitle?: string
   shortContent?: string
+  shortContent2?: string
+  shortContent3?: string
   fullContent?: string
   callToAction?: string
   video?: VideoBase
   videos?: VideoBase[]
   cards?: CardBase[]
-  cards?: Count[] 
+  cards?: Count[]
 }
 
 export interface SectionTitleBaseProps {
@@ -103,4 +105,4 @@ export interface Count {
     numberSuffix?: string
     description: string
   }
-  
+

@@ -2,9 +2,10 @@ import { ContentBase } from '~/types'
 
 const content: ContentBase = {
   title: 'Estude Melhor',
-  shortContent: 'Conheça o maior curso online de bateria do Brasil',
-  fullContent:
-    'Aprenda bateria de forma mais consciente e organizada, otimizando seus resultados, no seu tempo e em qualquer lugar.',
+  shortContent: 'Estude na maior ',
+  shortContent2: 'plataforma do Brasil',
+  shortContent3: ' por apenas 29,90/mês e ganhe de bônus uma mentoria de estudos!',
+  fullContent: 'Assista o vídeo abaixo para conhecer todos os benefícios ou chama no whats.',
   callToAction: 'Quero me inscrever agora!',
 }
 

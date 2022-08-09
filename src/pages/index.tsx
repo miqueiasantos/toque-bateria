@@ -6,7 +6,6 @@ import SEO from '~/components/SEO'
 import * as Grid from '~/components/Grid'
 
 import HeroBanner from '~/sections/HeroBanner'
-import HeroVideo from '~/sections/HeroVideo'
 import SectionOne from '~/sections/SectionOne'
 import SectionTwo from '~/sections/SectionTwo'
 import SectionThree from '~/sections/SectionThree'
@@ -22,7 +21,6 @@ const Home = () => (
     <SEO title="Início" />
 
     <HeroBanner />
-    <HeroVideo />
 
     <Grid.FlexContainer>
       <SectionOne />
@@ -41,7 +39,7 @@ const Home = () => (
     <Grid.FlexContainer paddingVertical="larger">
       <SectionBonus />
     </Grid.FlexContainer>
- 
+
     <SectionKnowTeacher />
     <SectionPlans />
   </Layout>

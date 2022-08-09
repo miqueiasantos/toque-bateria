@@ -9,7 +9,7 @@ import content from './content'
 
 const HeroVideo: React.FC = () => {
   return (
-        <Grid.FlexContainer paddingVertical="larger">
+        <Grid.FlexContainer>
           <Grid.FlexRow>
             <Video
               videoSrcURL={content.videoSrcURL}
@@ -17,7 +17,7 @@ const HeroVideo: React.FC = () => {
             />
           </Grid.FlexRow>
           <Grid.FlexRow justifyContent="center" paddingTop="large">
-            <Button to={content.callToAction}>{content.callToActionText}</Button>
+            <Button color="secondary" to={content.callToAction}>{content.callToActionText}</Button>
           </Grid.FlexRow>
         </Grid.FlexContainer>
   )
